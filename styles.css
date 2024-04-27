@@ -8,6 +8,7 @@ body {
   min-width: 100%;
   margin: 0;
   padding: 20px;
+  text-align: center;
 }
 
 .header {
@@ -37,7 +38,7 @@ p {
 .image-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .image-container img {
@@ -93,7 +94,7 @@ li{
 .benefits-container{
   display: flex;
   padding: 0px;
-  gap: 28px;
+ 
   justify-content:center;
 }
 
@@ -126,18 +127,21 @@ li{
 .about {
   height: 100vh;
   padding: 18px 28px;
+  min-width: 100%;
+  align-items: center;
 }
 
 .instructor-course-content {
   display: flex;
   padding: 12px;
-  gap: 30px;
+  min-width: 100%;
   font-size: 12px;
+  align-items: center;
 }
 
 .instructor-card{
   background-color: #f6f2f2;
-  width: 430px;
+  width: 100%;
   padding: 23px;
   border-radius: 12px;
   display: flex;
@@ -154,11 +158,11 @@ li{
 
 .course-content {
   padding: 24px;
-  width: 950px;
-  height: 750px;
+  width: 95%;
+  height: 850px;
   border-radius: 12px;
   display: flex;
-  gap: 24px;
+
   border: 1px solid beige;
   box-shadow: 9px 9px 4px 5px rgba(200, 129, 255, 0.392)
 }
@@ -194,7 +198,7 @@ li{
 
 .content-header hr {
   margin: 2px;
-  width: 182px;
+  width: 95%;
   color: white;
   height: 0.9px;
 }
@@ -203,11 +207,7 @@ li{
   display: flex;
 }
 
-.content-header{
-  display: flex;
-  gap: 24px;
-  flex-direction: column;
-}
+
 
 .content-header .shadow-courses { 
   padding: 24px;
@@ -241,19 +241,19 @@ li{
 
 .intermediate-advanced {
   display: flex;
-  gap: 24px;
+
   flex-direction: column;
 }
 
 .intermediate-advanced div {
   height: 430px;
   border-radius: 12px;
-  padding: 14px;
+  padding: px;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  width: 340px;
+  width: 330px;
 }
 
 .intermediate-advanced div h2 {
@@ -261,7 +261,7 @@ li{
 }
 
 .intermediate-advanced div  {
-  padding: 16px;
+  padding: px;
   display: flex;
   font-size: 16px;
   border: 1px solid beige;
@@ -269,9 +269,11 @@ li{
 }
 
 .advanced-level {
-      height: 60px;
-      width: 130px;
-      box-shadow: 9px 9px 4px 5px rgba(255, 24, 24, 0.392);
+      height: 30px;
+      width: 100px;
+      margin-top: -90px;
+      padding: -30px;
+      box-shadow: 9px 9px 0px 5px rgba(255, 24, 24, 0.392);
 }
 
 .intermediate {
