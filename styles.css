@@ -18,7 +18,7 @@ body {
 h1 {
   font-weight: bold;
   font-size: 48px;
-  color: #007bff;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -41,50 +41,23 @@ p {
 }
 
 .image-container img {
-  max-width: 100%;
-  height: auto;
+  height: 420px;
+  width: 620px;
+  border-radius: 18px;
+  /* max-width: 100%;
+  height: auto; */
 }
 ul {
   list-style: none; 
 }
 
-.benefits {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 40px;
-  
-}
-
-.benefit {
-  flex-basis: 30%;
-  text-align: center;
-  align-items: center;
- 
-}
-
-.benefit-icon {
-  font-size: 18px;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.benefit-title {
-  font-weight: bold;
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.benefit-description {
-  font-size: 18px;
-  color: #555;
-}
 .courses {
   padding: 5px;
   background-color: #f6f2f2;
 }
-
+li{
+  list-style: none;
+}
 .register-now {
   text-align: center;
 }
@@ -103,4 +76,210 @@ ul {
 
 .register-button:hover {
   background-color: #0056b3;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+
+.header-subtext {
+  color: hsl(240, 1%, 34%);
+}
+
+.benefits-container{
+  display: flex;
+  padding: 0px;
+  gap: 28px;
+  justify-content:center;
+}
+
+.benefit {
+  display: flex;
+  height : 100px;
+  padding: 16px;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.392);
+  border-radius: 12px;
+}
+
+.benefit:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: ease-out 0.3s;
+  box-shadow: 4px 4px 4px 4 px rgba(92, 92, 92, 0.392);
+}
+
+.benefit-title {
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.benefit-description {
+  font-size: 14px;
+}
+
+.about {
+  height: 100vh;
+  padding: 18px 28px;
+}
+
+.instructor-course-content {
+  display: flex;
+  padding: 12px;
+  gap: 30px;
+  font-size: 12px;
+}
+
+.instructor-card{
+  background-color: #f6f2f2;
+  width: 430px;
+  padding: 23px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  box-shadow: 4px 4px 4px 4px rgba(92, 92, 92, 0.392);
+
+}
+
+.about-container {
+  text-align: center;
+}
+
+.course-content {
+  padding: 24px;
+  width: 950px;
+  height: 750px;
+  border-radius: 12px;
+  display: flex;
+  gap: 24px;
+  border: 1px solid beige;
+  box-shadow: 9px 9px 4px 5px rgba(200, 129, 255, 0.392)
+}
+
+.instructor-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.name-linkedin {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  align-items: center;
+  gap: 14px;
+}
+
+.instructor-name {
+  display: flex;
+  margin-top: 16.6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.linked-in-icon{
+  width: 26px;
+}
+
+.content-header p{
+  font-size: 28px;
+}
+
+.content-header hr {
+  margin: 2px;
+  width: 182px;
+  color: white;
+  height: 0.9px;
+}
+
+.courses-list {
+  display: flex;
+}
+
+.content-header{
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.content-header .shadow-courses { 
+  padding: 24px;
+  height: 734px;
+  border-radius: 12px;
+}
+
+ li:before {
+  content:"\2BA9";
+  margin-right: 8px;
+  color: #000;
+}
+
+.shadow-courses div {
+  display: flex;
+  gap: 18px;
+  border: 1px solid beige;
+  padding: 12px;
+  border-radius: 12px;
+  flex-direction: column;
+  box-shadow: 9px 9px 4px 5px #a2f885
+}
+
+.shadow-courses h2 {
+  align-self: flex-start;
+}
+
+.shadow-courses li {
+  font-size: 16px;
+}
+
+.intermediate-advanced {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.intermediate-advanced div {
+  height: 430px;
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 340px;
+}
+
+.intermediate-advanced div h2 {
+  align-self: flex-start;
+}
+
+.intermediate-advanced div  {
+  padding: 16px;
+  display: flex;
+  font-size: 16px;
+  border: 1px solid beige;
+  gap: 12px;
+}
+
+.advanced-level {
+      height: 60px;
+      width: 130px;
+      box-shadow: 9px 9px 4px 5px rgba(255, 24, 24, 0.392);
+}
+
+.intermediate {
+  box-shadow: 9px 9px 4px 5px rgba(24, 174, 255, 0.392);
+}
+
+.advanced-level:hover, .intermediate:hover , .shadow-courses:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: ease-out 0.3s;
 }
