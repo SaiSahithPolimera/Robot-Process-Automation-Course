@@ -44,9 +44,12 @@ p {
   max-width: 100%;
   height: auto;
 }
+<<<<<<< HEAD
 ul {
   list-style: none; 
 }
+=======
+>>>>>>> f893f493162d5dc064185e4e3c74f0a752755043
 
 .benefits {
   display: flex;
