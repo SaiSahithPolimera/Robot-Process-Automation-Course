@@ -48,14 +48,14 @@ p {
   height: auto; */
 }
 ul {
-  list-style: none; 
+  list-style: none;
 }
 
 .courses {
   padding: 5px;
   background-color: #f6f2f2;
 }
-li{
+li {
   list-style: none;
 }
 .register-now {
@@ -90,16 +90,16 @@ li{
   color: hsl(240, 1%, 34%);
 }
 
-.benefits-container{
+.benefits-container {
   display: flex;
   padding: 0px;
   gap: 28px;
-  justify-content:center;
+  justify-content: center;
 }
 
 .benefit {
   display: flex;
-  height : 100px;
+  height: 100px;
   padding: 16px;
   flex-direction: column;
   gap: 4px;
@@ -129,23 +129,24 @@ li{
 }
 
 .instructor-course-content {
+  animation: bounce;
   display: flex;
   padding: 12px;
   gap: 30px;
   font-size: 12px;
 }
 
-.instructor-card{
+.instructor-card {
   background-color: #f6f2f2;
   width: 430px;
+  animation: bounceLeft 3.5s ease-in-out;
   padding: 23px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   box-shadow: 4px 4px 4px 4px rgba(92, 92, 92, 0.392);
-
 }
 
 .about-container {
@@ -154,16 +155,17 @@ li{
 
 .course-content {
   padding: 24px;
+  animation: bounceRight 3.5s ease-in-out;
   width: 950px;
   height: 750px;
   border-radius: 12px;
   display: flex;
   gap: 24px;
   border: 1px solid beige;
-  box-shadow: 9px 9px 4px 5px rgba(200, 129, 255, 0.392)
+  box-shadow: 9px 9px 4px 5px rgba(200, 129, 255, 0.392);
 }
 
-.instructor-image{
+.instructor-image {
   width: 150px;
   height: 150px;
   border-radius: 100%;
@@ -184,11 +186,11 @@ li{
   justify-content: center;
 }
 
-.linked-in-icon{
+.linked-in-icon {
   width: 26px;
 }
 
-.content-header p{
+.content-header p {
   font-size: 28px;
 }
 
@@ -203,20 +205,20 @@ li{
   display: flex;
 }
 
-.content-header{
+.content-header {
   display: flex;
   gap: 24px;
   flex-direction: column;
 }
 
-.content-header .shadow-courses { 
+.content-header .shadow-courses {
   padding: 24px;
   height: 734px;
   border-radius: 12px;
 }
 
- .course-content li:before {
-  content:"\2BA9";
+.course-content li:before {
+  content: "\2BA9";
   margin-right: 8px;
   color: #000;
 }
@@ -228,7 +230,7 @@ li{
   padding: 12px;
   border-radius: 12px;
   flex-direction: column;
-  box-shadow: 9px 9px 4px 5px #a2f885
+  box-shadow: 9px 9px 4px 5px #a2f885;
 }
 
 .shadow-courses h2 {
@@ -260,7 +262,7 @@ li{
   align-self: flex-start;
 }
 
-.intermediate-advanced div  {
+.intermediate-advanced div {
   padding: 16px;
   display: flex;
   font-size: 16px;
@@ -269,16 +271,18 @@ li{
 }
 
 .advanced-level {
-      height: 60px;
-      width: 130px;
-      box-shadow: 9px 9px 4px 5px rgba(255, 24, 24, 0.392);
+  height: 60px;
+  width: 130px;
+  box-shadow: 9px 9px 4px 5px rgba(255, 24, 24, 0.392);
 }
 
 .intermediate {
   box-shadow: 9px 9px 4px 5px rgba(24, 174, 255, 0.392);
 }
 
-.advanced-level:hover, .intermediate:hover , .shadow-courses:hover{
+.advanced-level:hover,
+.intermediate:hover,
+.shadow-courses:hover {
   cursor: pointer;
   transform: scale(1.02);
   transition: ease-out 0.3s;
@@ -286,15 +290,20 @@ li{
 
 .social i {
   color: black;
+  transition: transform 0.3s;
 }
 
-.links-copy-right{
+.social i:hover {
+  transform: translateY(-2px);
+}
+
+.links-copy-right {
   display: flex;
   gap: 12px;
   color: #000;
 }
 
-.links-copy-right a{
+.links-copy-right a {
   color: #000;
 }
 
@@ -304,9 +313,10 @@ li{
   flex-direction: column;
   width: 1400px;
   gap: 18px;
-  border-radius: 12px; 
+  animation: bounceRight 3.5s ease-in-out;
+  border-radius: 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .faq-container h2 {
@@ -324,7 +334,7 @@ li{
 
 .faq-item hr {
   border: none;
-  border-top: 1px solid #ddd; 
+  border-top: 1px solid #ddd;
   background-color: #ff0000;
   margin: 4px 0;
   width: 60px;
@@ -347,7 +357,7 @@ li{
   gap: 24px;
   padding: 24px;
   justify-content: space-between;
-} 
+}
 
 .location-testimonials .location {
   display: flex;
@@ -355,6 +365,7 @@ li{
   padding: 24px;
   flex-direction: column;
   width: 400px;
+  animation: bounceLeft 3.5s ease-in-out;
   height: 120;
   border-radius: 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -389,7 +400,7 @@ li{
   border-radius: 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
- 
+
 .testimonial-card {
   width: 300px;
   padding: 20px;
@@ -400,8 +411,8 @@ li{
 .testimonial-card img {
   width: 100px;
   height: 100px;
-  border-radius: 50%; 
-  object-fit: cover; 
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .testimonial-text {
@@ -417,22 +428,77 @@ li{
 }
 
 .testimonial-container {
-  margin-top: 20px;
   display: flex;
-  gap: 50px; 
+  gap: 24px;
   width: 730px;
-  justify-content: center; 
-  flex-wrap: wrap;
-  flex-direction: row; 
+  justify-content: center;
+  flex-direction: row;
 }
 
 .testimonial-card {
-  width: 300px;
+  width: 500px;
+  height: 354px;
   padding: 20px;
   text-align: center;
+  border-radius: 12px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
   height: 20vh;
+}
+
+.left-container {
+  animation: bounceLeft 3.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.right-container {
+  animation: bounceRight 3.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%, 
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(1080px);
+  }
+  60% {
+    transform: translateX(32px); 
+  }
+}
+
+@keyframes bounceLeft {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-1080px);
+  }
+  60% {
+    transform: translateX(-32px);
+  }
+}
+
+.testimonials {
+  display: flex;
+  gap: 24px;
+  width: 1200px;
+  border-radius: 12px;
+  flex-direction: column;
+  padding:28px;
+  animation: bounceRight 3.5s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
