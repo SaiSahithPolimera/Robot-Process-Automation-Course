@@ -8,12 +8,11 @@ body {
   min-width: 100%;
   margin: 0;
   padding: 20px;
-  text-align: center;
 }
 
 .header {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -38,7 +37,7 @@ p {
 .image-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .image-container img {
@@ -80,9 +79,8 @@ li{
 }
 
 .home {
-  /* height: 30%cvbnṃpx; */2.3
-  +32514-+ 
-  --"?:>jmnhgvbfcxaz`1 =\*/7  display: flex;``   
+  height: 100vh;
+  display: flex;
   flex-direction: column;
   gap: 8px;
   padding: 24px;
@@ -94,6 +92,7 @@ li{
 
 .benefits-container{
   display: flex;
+  text-align: center;
   padding: 0px;
  
   justify-content:center;
@@ -104,7 +103,7 @@ li{
   height : 100px;
   padding: 16px;
   flex-direction: column;
-  gap: 4px;
+
   box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.392);
   border-radius: 12px;
 }
@@ -128,21 +127,18 @@ li{
 .about {
   height: 100vh;
   padding: 18px 28px;
-  min-width: 100%;
-  align-items: center;
 }
 
 .instructor-course-content {
   display: flex;
   padding: 12px;
-  min-width: 100%;
+  gap: 30px;
   font-size: 12px;
-  align-items: center;
 }
 
 .instructor-card{
   background-color: #f6f2f2;
-  width: 100%;
+  width: 430px;
   padding: 23px;
   border-radius: 12px;
   display: flex;
@@ -159,11 +155,11 @@ li{
 
 .course-content {
   padding: 24px;
-  width: 95%;
-  height: 850px;
+  width: 950px;
+  height: 750px;
   border-radius: 12px;
   display: flex;
-
+  gap: 24px;
   border: 1px solid beige;
   box-shadow: 9px 9px 4px 5px rgba(200, 129, 255, 0.392)
 }
@@ -199,7 +195,7 @@ li{
 
 .content-header hr {
   margin: 2px;
-  width: 95%;
+  width: 182px;
   color: white;
   height: 0.9px;
 }
@@ -208,15 +204,19 @@ li{
   display: flex;
 }
 
-
+.content-header{
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
 
 .content-header .shadow-courses { 
   padding: 24px;
-  height: 734px;
+  height: 73px;
   border-radius: 12px;
 }
 
- li:before {
+ .course-content li:before {
   content:"\2BA9";
   margin-right: 8px;
   color: #000;
@@ -242,19 +242,19 @@ li{
 
 .intermediate-advanced {
   display: flex;
-
+  gap: 24px;
   flex-direction: column;
 }
 
 .intermediate-advanced div {
   height: 430px;
   border-radius: 12px;
-  padding: px;
+  padding: 14px;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  width: 330px;
+  width: 340px;
 }
 
 .intermediate-advanced div h2 {
@@ -262,7 +262,7 @@ li{
 }
 
 .intermediate-advanced div  {
-  padding: px;
+  padding: 16px;
   display: flex;
   font-size: 16px;
   border: 1px solid beige;
@@ -270,11 +270,9 @@ li{
 }
 
 .advanced-level {
-      height: 30px;
-      width: 100px;
-      margin-top: -90px;
-      padding: -30px;
-      box-shadow: 9px 9px 0px 5px rgba(255, 24, 24, 0.392);
+      height: 60px;
+      width: 130px;
+      box-shadow: 9px 9px 4px 5px rgba(255, 24, 24, 0.392);
 }
 
 .intermediate {
@@ -286,3 +284,203 @@ li{
   transform: scale(1.02);
   transition: ease-out 0.3s;
 }
+
+.social i {
+  color: black;
+}
+
+.links-copy-right{
+  display: flex;
+  gap: 12px;
+  color: #000;
+}
+
+.links-copy-right a{
+  color: #000;
+}
+
+.faq-container {
+  display: flex;
+  padding-top: 24px;
+  flex-direction: column;
+  margin-top: 1000vw;
+  gap: 18px;
+  border-radius: 12px; 
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; 
+}
+
+.faq-container h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.faq-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  
+}
+
+.faq-item hr {
+  border: none;
+  border-top: 1px solid #ddd; 
+  background-color: #ff0000;
+  margin: 4px 0;
+  width: 60px;
+  height: 3px;
+}
+
+.faq-item p {
+  margin-top: 12px;
+}
+
+.faq-item {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 1px;
+}
+.total{
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 12px;
+  padding: 10px;
+
+  border: 1px solid beige;
+  box-shadow: 0px 0px 9px 5px rgba(200, 129, 255, 0.392)
+}
+.learn-apply-succeed{
+  width: 70%;
+  text-align: center;
+  margin-left: 16%;
+  margin-top: 5%;
+  padding: 10px;
+  box-shadow: 1px 1px 9px 5px rgba(171, 219, 177, 0.392);
+}
+.learn-on-demand{
+  width: 50%; 
+  text-align: left;
+  margin-left: 10%;
+  padding: 3%;
+  box-shadow: -5px 5px 4px 5px rgba(255, 24, 24, 0.392);
+}
+.learn-from-experts{
+  width: 50%; 
+  text-align: right; 
+  margin-left: 40%;
+  padding: 3%;
+  box-shadow: 9px 9px 4px 5px rgba(255, 24, 24, 0.392);
+}
+.subscribe-to-scale{
+  width: 50%; 
+  text-align: left; 
+  margin-left: 10%;
+  padding: 3%;
+  box-shadow: -5px 9px 4px 5px rgba(255, 24, 24, 0.392);
+
+}
+.learn-on-demand:hover, .learn-from-experts:hover , .subscribe-to-scale:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: ease-out 0.3s;
+  box-shadow: -5px 5px 30px 5px rgba(255, 24, 24, 0.392);
+}
+
+.location-testimonials {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  justify-content: space-between;
+} 
+
+.location-testimonials .location {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  flex-direction: column;
+  width: 400px;
+  height: 120;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-testimonials .location h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.location h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.location iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+}
+
+.location-testimonials .location {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.testimonial-card {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.testimonial-text {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  color: #555;
+  font-weight: bold;
+}
+
+.testimonial-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 50px; 
+  width: 730px;
+  justify-content: center; 
+  flex-wrap: wrap;
+  flex-direction: row; 
+}
+
+.testimonial-card {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  height: 20vh;
+}
+
