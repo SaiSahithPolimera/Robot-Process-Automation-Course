@@ -8,6 +8,11 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -28,10 +33,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="home">
+    <section class="home">
       <div class="left-container">
         <div class="header">
           <h1>Robot Process Automation</h1>
@@ -71,43 +77,27 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="about">
-      <div class="instructor-course-content">
-        <div class="instructor-card">
+    </section>
+    <section class="about">
+      <div class="about-course-content">
+        <div class="course-description-card">
           <div class="about-container">
-            <h1>About the Instructor</h1>
+            <h1>About the Course</h1>
           </div>
-          <div class="instructor-image-container">
-            <img
-              src="assets/Instructor.jpg"
-              class="instructor-image"
-              alt="Loading..."
-            />
+          <div class="about-image">
+            <img src="assets/aboutCourse.avif" alt="aboutImage" />
           </div>
-          <div class="name-linkedin-profile">
-            <div class="name-linkedin">
-              <div class="instructor-name">
-                <h2>DharaniDhar Sunkari</h2>
-              </div>
-              <div class="profile-container">
-                <a
-                  href="https://www.linkedin.com/in/dharanidhar-sunkari-1a7752167/"
-                  ><img class="linked-in-icon" src="assets/linkedinIcon.png"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="about-instructor">
+          <div class="about-description">
             <p>
-              As a seasoned Digital Transformation Consultant with over 13.5
-              years in IT, including 7+ years focused on RPA, I bring extensive
-              expertise in leading teams and implementing RPA solutions.
-              Proficient in Automation Anywhere (V11 / A360) and UiPath (22.10),
-              I specialize in analyzing client processes, identifying automation
-              opportunities, and re-engineering workflows for efficiency. I've
-              managed Centre of Excellence (CoE) teams for four years, fostering
-              innovation and delivering scalable solutions.
+              Robotic Process Automation (RPA) is a technology that allows
+              anyone today to configure computer software, or a “robot” to
+              emulate and integrate the actions of a human interacting within
+              digital systems to execute a business process. RPA robots utilize
+              the user interface to capture data and manipulate applications
+              just like humans do. They interpret, trigger responses and
+              communicate with other systems in order to perform on a vast
+              variety of repetitive tasks. Only substantially better: an RPA
+              software robot never sleeps and makes zero mistakes.
             </p>
           </div>
         </div>
@@ -159,9 +149,180 @@
           </div>
         </div>
       </div>
-    </div>
-    <br />
-    <div class="faq-container">
+    </section>
+    <section class="instructor-card">
+      <div class="about-container">
+        <h1>About the Instructor</h1>
+      </div>
+      <div class="instructor-image-container">
+        <img
+          src="assets/Instructor.jpg"
+          class="instructor-image"
+          alt="Loading..."
+        />
+      </div>
+      <div class="name-linkedin-profile">
+        <div class="name-linkedin">
+          <div class="instructor-name">
+            <h2>DharaniDhar Sunkari</h2>
+          </div>
+          <div class="profile-container">
+            <a href="https://www.linkedin.com/in/dharanidhar-sunkari-1a7752167/"
+              ><img class="linked-in-icon" src="assets/linkedinIcon.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="about-instructor">
+        <p>
+          As a seasoned Digital Transformation Consultant with over 13.5 years
+          in IT, including 7+ years focused on RPA, I bring extensive expertise
+          in leading teams and implementing RPA solutions. Proficient in
+          Automation Anywhere (V11 / A360) and UiPath (22.10), I specialize in
+          analyzing client processes, identifying automation opportunities, and
+          re-engineering workflows for efficiency. I've managed Centre of
+          Excellence (CoE) teams for four years, fostering innovation and
+          delivering scalable solutions.
+        </p>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="testimonial-header-container">
+        <p class="testimonials-header">
+          Real Word from our <span>Interns</span>
+        </p>
+        <p class="testimonial-subtext">
+          Trusted By <span>15,000+</span> Students
+        </p>
+      </div>
+      <div class="swiper testimonial-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-card">
+            <div class="rating-container">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="testimonial">
+              I am glad that i got this opportunity to learn new things and how
+              to add new features. In this session everyone was super good and
+              helped each and every student. Their dedication and effort towards
+              this session was completely awesome. Even when we ask small/stupid
+              questions they answered it in sweet and convenient way
+            </div>
+            <div class="endorser-details">
+              <div class="endorser-image">
+                <img src="https://theedumoon.com/images/srujan.jpeg" />
+              </div>
+              <div class="endorser-name">
+                <p>- Cheemakurthi Srujan</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="rating-container">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="testimonial">
+              Edumoon is pretty good, and | am sure that it's going to help a
+              lot of people. There are various courses for students across
+              different branches, and the wonderful part of it is that any
+              student can access all the courses irrespective of what they're
+              studying.
+            </div>
+            <div class="endorser-details">
+              <div class="endorser-image">
+                <img
+                  src="https://d502jbuhuh9wk.cloudfront.net/orgData/62c7c5180cf2bd5f19e0d4b2/pages/assets/images/5NfTXsravanth.jpg"
+                />
+              </div>
+              <div class="endorser-name">
+                <p>- Snehith</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="rating-container">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="testimonial">
+              The platform was so helpful and I could explore the concepts
+              further while working on the assignments. The instructors were
+              very humble and patiently cleared all the doubts. Overall it was a
+              good learning experience. Thanks to Edumoon.
+            </div>
+            <div class="endorser-details">
+              <div class="endorser-image">
+                <img src="https://theedumoon.com/images/sowmya.jpeg" />
+              </div>
+              <div class="endorser-name">
+                <p>- Sowmya Korada</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="rating-container">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="testimonial">
+              The platform is pretty good and I am sure that it's gonna help a
+              lot of people including me. There are various courses for students
+              across different branches and the wonderful part of it is that any
+              student can access all the courses irrespective of what they're
+              studying... I just installed it some half an hour ago and I am
+              pretty sure that it's going to be helpful to me 💫✨.
+            </div>
+            <div class="endorser-details">
+              <div class="endorser-name">
+                <p>- Venkata Srilasya Hejeebu</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide testimonial-card">
+            <div class="rating-container">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <div class="testimonial">
+              The idea of developing this platform is so innovative to provide
+              materials and stuff to the public. I've got myself admitted in
+              andhra university and this will be so useful in my upcoming
+              engineering years and sessions ✨️ Thanking the developers!!!
+            </div>
+            <div class="endorser-details">
+              <div class="endorser-name">
+                <p>- NANDAN GALI H</p>
+              </div>
+            </div>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="/js/index.js"></script>
+        </div>
+      </div>
+      <div class="button-container">
+        <button>
+          <a
+            href="https://www.edumoon.in/courses/Robotic-Process-Automation-662d27b0efecb12a38ba61b9"
+            >Join now</a
+          >
+        </button>
+      </div>
+    </section>
+    <section class="faq-container">
       <h2 style="text-align: center">FREQUENTLY ASKED QUESTIONS</h2>
       <div class="row">
         <div class="col-12 col-lg-4">
@@ -176,9 +337,7 @@
           <div class="faq-item">
             <h4>Who can join this course?</h4>
             <hr />
-            <p>
-              Anyone who is interested can join.
-            </p>
+            <p>Anyone who is interested can join.</p>
           </div>
         </div>
 
@@ -186,7 +345,7 @@
           <div class="faq-item">
             <h4>Is this course online or offline?</h4>
             <hr />
-            <p>This is both online & offline- ANITS co.</p>
+            <p>This is both online & offline.</p>
           </div>
         </div>
 
@@ -240,7 +399,6 @@
             </p>
           </div>
         </div>
-
         <div class="col-12 col-lg-4">
           <div class="faq-item">
             <h4>I have registered. What's next?</h4>
@@ -249,92 +407,31 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="testimonials">
-      <div class="testimonial-header-container">
-      <p class="testimonials-header">Real Word from our <span>Interns</span></p>
-      <p class="testimonial-subtext">Trusted By <span>15,000+</span> Students</p>
-      </div>
-      <div class="testimonial-container">
-        <div class="testimonial-card">
-          <div class="rating-container">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <div class="testimonial">
-              I am glad that i got this opportunity to learn new things and how to add new features. In this session everyone was super good and helped each and every student. Their dedication and effort towards this session was completely awesome. Even when we ask small/stupid questions they answered it in sweet and convenient way
-          </div>
-          <div class="endorser-details">
-            <div class="endorser-image">
-              <img src="https://theedumoon.com/images/srujan.jpeg">
-            </div>
-            <div class="endorser-name">
-              <p>Cheemakurthi Srujan </p>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="rating-container">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <div class="testimonial">
-              I am glad that i got this opportunity to learn new things and how to add new features. In this session everyone was super good and helped each and every student. Their dedication and effort towards this session was completely awesome. Even when we ask small/stupid questions they answered it in sweet and convenient way
-          </div>
-          <div class="endorser-details">
-            <div class="endorser-image">
-              <img src="https://theedumoon.com/images/srujan.jpeg">
-            </div>
-            <div class="endorser-name">
-              <p>Cheemakurthi Srujan </p>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="rating-container">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-          </div>
-          <div class="testimonial">
-              I am glad that i got this opportunity to learn new things and how to add new features. In this session everyone was super good and helped each and every student. Their dedication and effort towards this session was completely awesome. Even when we ask small/stupid questions they answered it in sweet and convenient way
-          </div>
-          <div class="endorser-details">
-            <div class="endorser-image">
-              <img src="https://theedumoon.com/images/srujan.jpeg">
-            </div>
-            <div class="endorser-name">
-              <p>Cheemakurthi Srujan </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="button-container">
-        <button>Join now</button>
-      </div>
-    </div>
+    </section>
 
-    <!-- <div class="location">
-      <h3>Join us at</h3>
-      <iframe
-        src="https://www.google.com/maps/place/HIT+THE+FLOOR+DANCE+STUDIO/@17.8141474,83.3475333,15z/data=!4m6!3m5!1s0x3a395b3940288bd3:0x12498ba961606c1a!8m2!3d17.8047064!4d83.3563004!16s%2Fg%2F11n08dnxtb?entry=ttu"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-      <p>
-        HIT THE FLOOR DANCE STUDIO, Midhilapuri Vuda Colony, Pothinamallayya
-        Palem, Visakhapatnam, Andhra Pradesh 530041
-      </p>
-    </div> -->
-    <div class="footer">
+    <section class="location">
+      <div>
+        <h3>Join us at</h3>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.722987048614!2d83.35372011082792!3d17.80471149057852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b3940288bd3%3A0x12498ba961606c1a!2sHIT%20THE%20FLOOR%20DANCE%20STUDIO!5e0!3m2!1sen!2sin!4v1714839149396!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div>
+        <button>
+          <a href="https://maps.app.goo.gl/usbgUoXhFBD9bQpy7"> View on Maps</a>
+          <i class="fa-sharp fa-solid fa-location-dot"></i>
+        </button>
+      </div>
+    </section>
+    <footer class="footer">
       <h3 style="text-align: center; margin-top: 20px; margin-bottom: -10px">
         Follow Us
       </h3>
@@ -380,6 +477,6 @@
           </li>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

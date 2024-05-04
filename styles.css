@@ -1,13 +1,8 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.container {
-  min-width: 100%;
-  margin: 0;
-  padding: 20px;
 }
 
 .header {
@@ -113,7 +108,7 @@ li {
   padding: 18px 28px;
 }
 
-.instructor-course-content {
+.about-course-content {
   animation: bounce;
   display: flex;
   padding: 12px;
@@ -121,20 +116,34 @@ li {
   font-size: 12px;
 }
 
-.instructor-card {
-  background-color: #f6f2f2;
+.about-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.about-description p {
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 16px;
+}
+
+.course-description-card {
+  background-color: #fdf2f0;
   width: 430px;
+  height: 750px;
   animation: bounceLeft 3.5s ease-in-out;
   padding: 23px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 14px;
   box-shadow: 4px 4px 4px 4px rgba(92, 92, 92, 0.392);
 }
 
 .about-container {
+  font-size: 24px;
   text-align: center;
 }
 
@@ -164,6 +173,25 @@ li {
   gap: 14px;
 }
 
+.about-instructor {
+  height: 40vh;
+}
+
+.instructor-card {
+    display: flex;
+    width: 1200px;
+    height: 430px;
+    animation: bounceLeft 3.5s ease-in-out;
+    padding: 24px;
+    box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.392);
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 5%;
+    border-radius: 12px;
+    flex-direction: column;
+}
+
 .instructor-name {
   display: flex;
   margin-top: 16.6px;
@@ -173,6 +201,11 @@ li {
 
 .linked-in-icon {
   width: 26px;
+}
+
+.linked-in-icon:hover {
+transform: scale(1.15);
+transition: 3s ease-in-out;
 }
 
 .content-header p {
@@ -298,10 +331,11 @@ li {
   flex-direction: column;
   width: 1400px;
   gap: 18px;
+  height: 90vh;
   animation: bounceRight 3.5s ease-in-out;
   border-radius: 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  margin: 35px auto;
 }
 
 .faq-container h2 {
@@ -337,21 +371,6 @@ li {
   gap: 1px;
 }
 
-
-.testimonial-card {
-  width: 300px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .testimonial-text {
   margin: 20px 0;
   font-size: 16px;
@@ -364,25 +383,7 @@ li {
   font-weight: bold;
 }
 
-.testimonial-container {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.testimonial-card {
-  width: auto;
-  height: 254px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
 .footer {
-  /* position: fixed; */
-  /* bottom: 0; */
   height: 20vh;
   width: 100%;
 }
@@ -403,7 +404,7 @@ li {
   0%,
   20%,
   50%,
-  80%, 
+  80%,
   100% {
     transform: translateX(0);
   }
@@ -411,8 +412,13 @@ li {
     transform: translateX(1080px);
   }
   60% {
-    transform: translateX(32px); 
+    transform: translateX(32px);
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes bounceLeft {
@@ -431,23 +437,23 @@ li {
   }
 }
 
-
 .testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 24px;
   padding: 100px 50px;
 }
 
 .testimonial-header-container {
+  animation: bounceRight 5.5s ease-in-out;
   display: flex;
   flex-direction: column;
-  gap:  -2px;
+  gap: -2px;
   align-items: center;
 }
 
-.testimonials-header{
+.testimonials-header {
   color: #000;
   font-size: 36px;
   font-weight: 650;
@@ -463,16 +469,56 @@ li {
   font-weight: 700;
 }
 
+.button-container button {
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  animation: bounceRight 5.5s ease-in-out;
+  background-color: #faeaeabf;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.button-container button:hover {
+  transition: ease 0.9s;
+  box-shadow: 0px 0px 4px 3px rgba(125, 125, 125, 0.334);
+}
+
+.swiper {
+  animation: bounceLeft 5.5s ease-in-out;
+  width: 1200px;
+  height: 560px;
+  display: flex;
+  padding: 30px;
+  gap: 12px;
+  border-radius: 12px;
+  align-items: center;
+  box-shadow: 0px 0px 4px 3px rgba(180, 180, 180, 0.1);
+  justify-content: center;
+}
+
+.swiper-slide {
+  box-shadow: 2px 4px 4px 3px rgba(119, 119, 119, 0.1);
+  display: flex;
+  padding: 30px 50px;
+  width: 200px;
+  border-radius: 12px;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .testimonial-card {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
-  min-width: 350px;
-  min-height: 380px; /* Adjust this value as needed */
-  max-height: auto;
-  text-align: justify;
-  align-items: center;
-  padding: 24px;
+  gap: 24px;
+  width: 330px;
+  height: 450px;
+}
+
+.rating-container span {
+  color: gold;
 }
 
 .endorser-details {
@@ -488,21 +534,62 @@ li {
   justify-content: center;
 }
 
-.rating-container span {
-  color: gold;
+.endorser-name p {
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
 }
 
-.button-container button{
-  font-size: 24px;
+.endorser-details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.location {
+  animation: fadeIn 1.5s ease-in-out;
+  display: flex;
+  height: 80vh;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+iframe {
+  border-radius: 12px;
+}
+
+.location button {
+  font-size: 16px;
   border: none;
   cursor: pointer;
   font-weight: 600;
   background-color: #faeaeabf;
   border-radius: 12px;
-  padding: 14px;
+  padding: 12px;
 }
 
-.button-container button:hover {
-  transition: ease 0.9s;
-  box-shadow: 0px 0px 4px 3px rgba(255, 0, 0, 0.1) ;
+.location button:hover {
+  background-color: #f8d8d8bf;
 }
+
