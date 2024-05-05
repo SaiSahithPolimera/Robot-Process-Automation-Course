@@ -529,7 +529,8 @@ transition: 3s ease-in-out;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 100px 50px;
+  height: auto;
+  padding: 150px 50px;
 }
 
 .testimonial-header-container {
@@ -548,6 +549,8 @@ transition: 3s ease-in-out;
 
 .testimonial-subtext {
   font-weight: 450;
+  
+ 
   color: #494949;
 }
 
@@ -561,6 +564,7 @@ transition: 3s ease-in-out;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  margin-top: 5vh;
   animation: bounceRight 5.5s ease-in-out;
   background-color: #ed0d0dbf;
   border-radius: 12px;
@@ -685,7 +689,7 @@ iframe {
   align-items: center;
   justify-content: center;
  
-  padding: 10px 50px;
+  padding: -10px -50px;
 }
 .certificate-description{
   display: flex;
@@ -693,5 +697,11 @@ iframe {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 10px 50px;
+  padding: -10px -50px;
+}
+.my{
+  margin-top: 10vh;
+}
+.you{
+  margin-bottom: 20vh;
 }
