@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="swiper-11.1.1/package/swiper-bundle.min.css">
     <script src="swiper-11.1.1/package/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="swiper-11.1.1/package/swiper-bundle.min.css">
+    <script src="swiper-11.1.1/package/swiper-bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -32,8 +34,10 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <section class="home">
     <section class="home">
       <div class="left-container">
         <div class="header">
@@ -42,12 +46,13 @@
         </div>
         <div class="image-container">
           <img src="assets/BannerImage.jpg" alt="bannerImage" class="banner" />
+          <img src="assets/BannerImage.jpg" alt="bannerImage" class="banner" />
         </div>
       </div>
       <div class="right-container">
-        <div class="row d-flex flex-row justify-content-center">
-          <div class="benefits-container">
-            <div class="col-12 col-lg-4">
+        <div class="container d-flex flex-row justify-content-center">
+          <div class=" row benefits-container">
+            <div class="col-8 col-lg-4">
               <div class="benefit">
                 <h3 class="benefit-title">Futuristic Skills</h3>
                 <p class="benefit-description">
@@ -55,15 +60,15 @@
                 </p>
               </div>
             </div>
-            <div class="col-12 col-lg-4">
-              <div class="benefit">
+            <div class="col-8 col-lg-4">
+              <div class="benefit" >
                 <h3 class="benefit-title">Certification</h3>
                 <p class="benefit-description">
                   Get certified in Robot Process Automation
                 </p>
               </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-8 col-lg-4">
               <div class="benefit">
                 <h3 class="benefit-title">Community</h3>
                 <p class="benefit-description">
@@ -75,9 +80,77 @@
         </div>
       </div>
     </section>
+    <br/>
     <section class="about">
+      <div class="d-lg-none course-description-card-in-mobile about-in-mobile">
+        <div class="about-container-in-mobile">
+          <h1>About the Course</h1>
+        </div>
+        <div class="about-image">
+          <img src="assets/aboutCourse.avif" alt="aboutImage" />
+        </div>
+        <div class="about-description">
+          <p>
+            Robotic Process Automation (RPA) is a technology that allows
+            anyone today to configure computer software, or a “robot” to
+            emulate and integrate the actions of a human interacting within
+            digital systems to execute a business process. RPA robots utilize
+            the user interface to capture data and manipulate applications
+            just like humans do. They interpret, trigger responses and
+            communicate with other systems in order to perform on a vast
+            variety of repetitive tasks. Only substantially better: an RPA
+            software robot never sleeps and makes zero mistakes.
+          </p>
+        </div>
+      </div>
+      <div class="d-lg-none content-header mt-5">
+        <div>
+          <p style="text-align: center;">What you'll learn</p>
+          <hr />
+        </div>
+        <div class="shadow-courses">
+          <div>
+            <h2>Basics Level</h2>
+            <li>
+              High Level Concepts for RPA Training - Automation Anywhere
+            </li>
+            <li>RPA Overview</li>
+            <li>Automation Anywhere architecture</li>
+            <li>Automation Anywhere control room</li>
+            <li>Web automation - Capture</li>
+            <li>Variables / Arguments</li>
+            <li>Logging mechanism</li>
+            <li>Conditional statements</li>
+            <li>Loop commands</li>
+            <li>Exception Handling</li>
+            <li>Database integration</li>
+          </div>
+        </div>
+      </div>
+      <div class="d-lg-none intermediate-advanced" >
+        <div class="intermediate-in-mobile p-5" >
+          <h2>Intermediate Level</h2>
+          <li>Triggers</li>
+          <li>Run task and Variable Mapping</li>
+          <li>Window Commands</li>
+          <li>Screen Commands</li>
+          <li>Email Automation</li>
+          <li>Steps and Commenting - Code readability</li>
+          <li>PDF Automation</li>
+          <li>Excel Automation</li>
+        </div>
+        <div class="d-lg-none">
+          <div class="advanced-level-in-mobile">
+            <h2>Advanced Level</h2>
+            <li>Troubleshooting & Debugging</li>
+            <li>Automation best practices</li>
+            <li>Different Use cases - Topic Wise</li>
+            <li>Project Organization & Deployment</li>
+          </div>
+        </div>
+      </div>
       <div class="about-course-content">
-        <div class="course-description-card">
+        <div class="d-none d-lg-inline course-description-card">
           <div class="about-container">
             <h1>About the Course</h1>
           </div>
@@ -100,7 +173,27 @@
         </div>
 
         <div class="course-content">
-          <div class="content-header">
+          <div class="d-lg-none">
+            <div class="total" >
+              <div class="learn-apply-succeed"> 
+                <h4>Learn.Apply.Succeed</h4>
+              <p>Your schedule, your pace, your environment</p>
+              </div>
+              <div class="learn-on-demand" >
+                <h5>Learn On-Demand</h5>
+                <p>Skill up at your own pace with immersive Learning</p>
+              </div>
+              <div class="learn-from-experts">
+                <h5>Learn from Experts</h5>
+                <p>Acquire latest skills from our experts in both live or virtual classes</p>
+              </div>
+              <div class="subscribe-to-scale">
+                <h5>Subscribe to scale</h5>
+                <p>Experience frictionless unlimited premiun content on-demand in both live and virtual classes</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-lg-inline content-header">
             <div>
               <p>What you'll learn</p>
               <hr />
@@ -124,7 +217,7 @@
               </div>
             </div>
           </div>
-          <div class="intermediate-advanced">
+          <div class="d-none d-lg-inline intermediate-advanced">
             <div class="intermediate">
               <h2>Intermediate Level</h2>
               <li>Triggers</li>
@@ -136,12 +229,14 @@
               <li>PDF Automation</li>
               <li>Excel Automation</li>
             </div>
-            <div class="advanced-level">
-              <h2>Advanced Level</h2>
-              <li>Troubleshooting & Debugging</li>
-              <li>Automation best practices</li>
-              <li>Different Use cases - Topic Wise</li>
-              <li>Project Organization & Deployment</li>
+            <div class="d-none d-lg-inline ">
+              <div class="advanced-level">
+                <h2>Advanced Level</h2>
+                <li>Troubleshooting & Debugging</li>
+                <li>Automation best practices</li>
+                <li>Different Use cases - Topic Wise</li>
+                <li>Project Organization & Deployment</li>
+              </div>
             </div>
           </div>
         </div>
@@ -192,123 +287,122 @@
           Trusted By <span>15,000+</span> Students
         </p>
       </div>
-      <div class="swiper testimonial-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide testimonial-card">
-            <div class="rating-container">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <div class="testimonial">
-              I am glad that i got this opportunity to learn new things and how
-              to add new features. In this session everyone was super good and
-              helped each and every student. Their dedication and effort towards
-              this session was completely awesome. Even when we ask small/stupid
-              questions they answered it in sweet and convenient way
-            </div>
-            <div class="endorser-details">
-              <div class="endorser-image">
-                <img src="https://theedumoon.com/images/srujan.jpeg" />
+      <div class="d-lg-none">
+        <div class="you"></div>
+      </div>
+      <div class="swiper testimonial-container">est
+        <div class="swiper-wrapper"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+            ` 
+              <div class="swiper-slide testimonial-card">
+                <div class="rating-container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <div>
+                  <div class="testimonial">
+                    I am glad that i got this opportunity to learn new things and how
+                    to add new features. In this session everyone was super good and
+                    helped each and every student. Their dedication and effort towards
+                    this session was completely awesome. Even when we ask small/stupid
+                    questions they answered it in sweet and convenient way
+                  </div>
+                  <div class="endorser-details">
+                    <div class="endorser-image">
+                      <img src="https://theedumoon.com/images/srujan.jpeg" />
+                    </div>
+                    <div class="endorser-name">
+                      <p>- Cheemakurthi Srujan</p>
+                    </div>
+                </div>
+                </div>
               </div>
-              <div class="endorser-name">
-                <p>- Cheemakurthi Srujan</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="swiper-slide testimonial-card">
+                <div class="rating-container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <div class="testimonial">
+                  Edumoon is pretty good, and | am sure that it's going to help a
+                  lot of people. There are various courses for students across
+                  different branches, and the wonderful part of it is that any
+                  student can access all the courses irrespective of what they're
+                  studying.
+                </div>
+                <div class="endorser-details">
+                  <div class="endorser-image">
+                    <img
+                      src="https://d502jbuhuh9wk.cloudfront.net/orgData/62c7c5180cf2bd5f19e0d4b2/pages/assets/images/5NfTXsravanth.jpg"
+                    />
+                  </div>
+                  <div class="endorser-name">
+                    <p>- Snehith</p>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="swiper-slide testimonial-card">
+                <div class="rating-container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <div class="testimonial">
+                  The platform is pretty good and I am sure that it's gonna help a
+                  lot of people including me. There are various courses for students
+                  across different branches and the wonderful part of it is that any
+                  student can access all the courses irrespective of what they're
+                  studying... I just installed it some half an hour ago and I am
+                  pretty sure that it's going to be helpful to me 💫✨.
+                </div>
+                <div class="endorser-details">
+                  <div class="endorser-name">
+                    <p>- Venkata Srilasya Hejeebu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="swiper-slide testimonial-card">
+                <div class="rating-container">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+                <div class="testimonial">
+                  The idea of developing this platform is so innovative to provide
+                  materials and stuff to the public. I've got myself admitted in
+                  andhra university and this will be so useful in my upcoming
+                  engineering years and sessions ✨️ Thanking the developers!!!
+                </div>
+                <div class="endorser-details">
+                  <div class="endorser-name">
+                    <p>- NANDAN GALI H</p>
+                  </div>
+                </div>
+              </div>
+    
+              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+              <script src="js/index.js"></script>
             </div>
           </div>
-          <div class="swiper-slide testimonial-card">
-            <div class="rating-container">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <div class="testimonial">
-              Edumoon is pretty good, and | am sure that it's going to help a
-              lot of people. There are various courses for students across
-              different branches, and the wonderful part of it is that any
-              student can access all the courses irrespective of what they're
-              studying.
-            </div>
-            <div class="endorser-details">
-              <div class="endorser-image">
-                <img
-                  src="https://d502jbuhuh9wk.cloudfront.net/orgData/62c7c5180cf2bd5f19e0d4b2/pages/assets/images/5NfTXsravanth.jpg"
-                />
-              </div>
-              <div class="endorser-name">
-                <p>- Snehith</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide testimonial-card">
-            <div class="rating-container">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <div class="testimonial">
-              The platform was so helpful and I could explore the concepts
-              further while working on the assignments. The instructors were
-              very humble and patiently cleared all the doubts. Overall it was a
-              good learning experience. Thanks to Edumoon.
-            </div>
-            <div class="endorser-details">
-              <div class="endorser-image">
-                <img src="https://theedumoon.com/images/sowmya.jpeg" />
-              </div>
-              <div class="endorser-name">
-                <p>- Sowmya Korada</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide testimonial-card">
-            <div class="rating-container">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <div class="testimonial">
-              The platform is pretty good and I am sure that it's gonna help a
-              lot of people including me. There are various courses for students
-              across different branches and the wonderful part of it is that any
-              student can access all the courses irrespective of what they're
-              studying... I just installed it some half an hour ago and I am
-              pretty sure that it's going to be helpful to me 💫✨.
-            </div>
-            <div class="endorser-details">
-              <div class="endorser-name">
-                <p>- Venkata Srilasya Hejeebu</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide testimonial-card">
-            <div class="rating-container">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <div class="testimonial">
-              The idea of developing this platform is so innovative to provide
-              materials and stuff to the public. I've got myself admitted in
-              andhra university and this will be so useful in my upcoming
-              engineering years and sessions ✨️ Thanking the developers!!!
-            </div>
-            <div class="endorser-details">
-              <div class="endorser-name">
-                <p>- NANDAN GALI H</p>
-              </div>
-            </div>
-          </div>
-
-          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-          <script src="js/index.js"></script>
         </div>
+       </div>
+      </div>
+      <div class="d-lg-none mt-5">
+        <div class="my"></div>
       </div>
       <div class="button-container">
         <button>
@@ -319,11 +413,29 @@
         </button>
       </div>
     </section>
+    <section class="certificate">
+      <div class="certificate-container">
+        <div class="certificate-image">
+          <img src="C:\Users\rajak\OneDrive\Desktop\Websites\mahender2\Robot-Process-Automation-Course\assets\certificate.jpeg" alt="certificate" style="height: 38%; width: 56%; margin-left: 22%;" />
+        </div>
+        <div class="certificate-description">
+          <h2>Certification</h2>
+          <p>
+            Get certified in Robot Process Automation. We provide two
+            certificates - one for completing the training course and another
+            for completing the internship.
+          </p>
+        </div>
+      </div>
+    </section>
     <section class="faq-container">
       <h2 style="text-align: center">FREQUENTLY ASKED QUESTIONS</h2>
       <div class="row">
         <div class="col-12 col-lg-4">
           <div class="faq-item">
+            <h4 class="faq-question">When will this course start?</h4>
+            <hr />
+            <p class="faq-answer">Course starts from May 20th.</p>
             <h4 class="faq-question">When will this course start?</h4>
             <hr />
             <p class="faq-answer">Course starts from May 20th.</p>
@@ -335,12 +447,16 @@
             <h4>Who can join this course?</h4>
             <hr />
             <p>Anyone who is interested can join.</p>
+            <hr />
+            <p>Anyone who is interested can join.</p>
           </div>
         </div>
 
         <div class="col-12 col-lg-4">
           <div class="faq-item">
             <h4>Is this course online or offline?</h4>
+            <hr />
+            <p>This is both online & offline.</p>
             <hr />
             <p>This is both online & offline.</p>
           </div>
@@ -380,6 +496,7 @@
           <div class="faq-item">
             <h4>My payment did not go through. What should I do?</h4>
             <hr />
+            <hr />
             <p>If you face any issues, contact this number (9966283388)</p>
           </div>
         </div>
@@ -405,13 +522,26 @@
         </div>
       </div>
     </section>
-
+    <div class="d-lg-none">
+      <div class="my-in-mobile"></div>
+    </div>
+    <div class="d-none d-lg-inline">
+      <div class="my"></div>
+    </div>
     <section class="location">
       <div>
         <h3>Join us at</h3>
       </div>
       <div>
         <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.722987048614!2d83.35372011082792!3d17.80471149057852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b3940288bd3%3A0x12498ba961606c1a!2sHIT%20THE%20FLOOR%20DANCE%20STUDIO!5e0!3m2!1sen!2sin!4v1714839149396!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.722987048614!2d83.35372011082792!3d17.80471149057852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b3940288bd3%3A0x12498ba961606c1a!2sHIT%20THE%20FLOOR%20DANCE%20STUDIO!5e0!3m2!1sen!2sin!4v1714839149396!5m2!1sen!2sin"
           width="600"
           height="450"
@@ -447,33 +577,61 @@
           <div class="p-3">
             <a href="https://twitter.com/theedumoon?lang=en"
               ><i class="fa-brands fa-x-twitter"></i
+    </section>
+    <footer class="footer">
+      <h3 style="text-align: center; margin-top: 20px; margin-bottom: -10px">
+        Follow Us
+      </h3>
+      <div class="social">
+        <div class="d-flex flex-row justify-content-center p-3">
+          <div class="p-3" style="background-color: aliceblue;  border-radius: 530px; height: 40px; width: 40px; margin: 10px; padding: 30px;">
+            <a href="https://www.facebook.com/theEduMoon1"
+              ><i class="fa-brands fa-facebook "></i
             ></a>
           </div>
-          <div class="p-3">
+          <div class="p-3" style="background-color: aliceblue; border-radius: 530px; height: 40px; width: 40px; margin: 10px; padding: 30px;">
+            <a href="https://www.instagram.com/theedumoon/?utm_medium=copy_link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="p-3" style="background-color: aliceblue;  border-radius: 130px; height: 40px; width: 40px; margin: 10px; padding: 30px;">
+            <div>
+              <a href="https://twitter.com/theedumoon?lang=en"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            </div>
+          </div>
+          <div class="p-3" style="background-color: aliceblue;  border-radius: 530px; height: 40px; width: 40px; margin: 10px; padding: 30px;">
             <a href="https://www.linkedin.com/company/edumoon/"
               ><i class="fa-brands fa-linkedin"></i
             ></a>
           </div>
-          <div class="p-3">
+          <div class="p-3" style="background-color: aliceblue;  border-radius: 530px; height: 40px; width: 40px; margin: 10px; padding: 30px;">
             <a href="https://www.youtube.com/@EduMoon/about"
               ><i class="fa-brands fa-youtube"></i
             ></a>
           </div>
         </div>
       </div>
-      <div class="d-flex flex-row justify-content-center p-1">
-        <div class="links-copy-right">
-          <li id="year">EduMoon © 2024</li>
+      <div class="d-flex flex-row justify-content-center p-1" style="color: white; margin-bottom: 20px; padding-bottom: 20px;">
+        <div class="links-copy-right" style="color: white;">
+          <li id="year" style="color: white;" >EduMoon © 2024</li>
           <li>
-            <a href="https://www.edumoon.in/privacypolicy"> Privacy Policy</a>
+            <a href="https://www.edumoon.in/privacypolicy"  style="color: white;"> Privacy Policy</a>
           </li>
-          <li><a href="https://www.edumoon.in/termsofuse">Terms of use</a></li>
-          <li><a href="https://www.edumoon.in/contactus"> Contact Us</a></li>
+          <li><a href="https://www.edumoon.in/termsofuse" style="color: white;">Terms of use</a></li>
+          <li><a href="https://www.edumoon.in/contactus" style="color: white;"> Contact Us</a></li>
           <li>
-            <a href="https://www.edumoon.in/refundpolicy">Refund Policy</a>
+            <a href="https://www.edumoon.in/refundpolicy" style="color: white;">Refund Policy</a>
           </li>
+          <br/>
         </div>
+        <br/>
       </div>
+    </footer>
+  </body>
+</html>
+
     </footer>
   </body>
 </html>
