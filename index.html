@@ -8,7 +8,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="swiper-11.1.1/package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="swiper-11.1.1/package/swiper-bundle.min.css" />
     <script src="swiper-11.1.1/package/swiper-bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -31,13 +31,13 @@
     ></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <section class="home">
       <div class="left-container">
         <div class="header">
-          <h1>Robot Process Automation</h1>
+          <h1>Robotic Process Automation</h1>
           <p class="header-subtext">Welcome to the world of Robotics</p>
         </div>
         <div class="image-container">
@@ -45,39 +45,95 @@
         </div>
       </div>
       <div class="right-container">
-        <div class="row d-flex flex-row justify-content-center">
-          <div class="benefits-container">
-            <div class="col-12 col-lg-4">
-              <div class="benefit">
-                <h3 class="benefit-title">Futuristic Skills</h3>
-                <p class="benefit-description">
-                  Learn the skills of the future
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="benefit">
-                <h3 class="benefit-title">Certification</h3>
-                <p class="benefit-description">
-                  Get certified in Robot Process Automation
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4">
-              <div class="benefit">
-                <h3 class="benefit-title">Community</h3>
-                <p class="benefit-description">
-                  Join a vibrant community of Robotics enthusiasts
-                </p>
-              </div>
-            </div>
+        <div class="row benefits-container">
+          <div class="benefit">
+            <h3 class="benefit-title">Futuristic Skills</h3>
+            <p class="benefit-description">Learn the skills of the future</p>
+          </div>
+          <div class="benefit">
+            <h3 class="benefit-title">Certification</h3>
+            <p class="benefit-description">
+              Get certified in Robot Process Automation
+            </p>
+          </div>
+          <div class="benefit">
+            <h3 class="benefit-title">Community</h3>
+            <p class="benefit-description">
+              Join a vibrant community of Robotics enthusiasts
+            </p>
           </div>
         </div>
       </div>
     </section>
+    <br />
     <section class="about">
+      <div class="d-lg-none course-description-card-in-mobile about-in-mobile">
+        <div class="about-container-in-mobile">
+          <h1>About the Course</h1>
+        </div>
+        <div class="about-image">
+          <img src="assets/aboutCourse.avif" alt="aboutImage" />
+        </div>
+        <div class="about-description">
+          <p>
+            Robotic Process Automation (RPA) is a technology that allows anyone
+            today to configure computer software, or a “robot” to emulate and
+            integrate the actions of a human interacting within digital systems
+            to execute a business process. RPA robots utilize the user interface
+            to capture data and manipulate applications just like humans do.
+            They interpret, trigger responses and communicate with other systems
+            in order to perform on a vast variety of repetitive tasks. Only
+            substantially better: an RPA software robot never sleeps and makes
+            zero mistakes.
+          </p>
+        </div>
+      </div>
+      <div class="d-lg-none content-header mt-5">
+        <div>
+          <p style="text-align: center">What you'll learn</p>
+          <hr />
+        </div>
+        <div class="shadow-courses">
+          <div>
+            <h2>Basics Level</h2>
+            <li>High Level Concepts for RPA Training - Automation Anywhere</li>
+            <li>RPA Overview</li>
+            <li>Automation Anywhere architecture</li>
+            <li>Automation Anywhere control room</li>
+            <li>Web automation - Capture</li>
+            <li>Variables / Arguments</li>
+            <li>Logging mechanism</li>
+            <li>Conditional statements</li>
+            <li>Loop commands</li>
+            <li>Exception Handling</li>
+            <li>Database integration</li>
+          </div>
+        </div>
+      </div>
+      <div class="d-lg-none intermediate-advanced">
+        <div class="intermediate-in-mobile p-5">
+          <h2>Intermediate Level</h2>
+          <li>Triggers</li>
+          <li>Run task and Variable Mapping</li>
+          <li>Window Commands</li>
+          <li>Screen Commands</li>
+          <li>Email Automation</li>
+          <li>Steps and Commenting - Code readability</li>
+          <li>PDF Automation</li>
+          <li>Excel Automation</li>
+        </div>
+        <div class="d-lg-none">
+          <div class="advanced-level-in-mobile">
+            <h2>Advanced Level</h2>
+            <li>Troubleshooting & Debugging</li>
+            <li>Automation best practices</li>
+            <li>Different Use cases - Topic Wise</li>
+            <li>Project Organization & Deployment</li>
+          </div>
+        </div>
+      </div>
       <div class="about-course-content">
-        <div class="course-description-card">
+        <div class="d-none d-lg-inline course-description-card">
           <div class="about-container">
             <h1>About the Course</h1>
           </div>
@@ -98,30 +154,28 @@
             </p>
           </div>
         </div>
-
-        <div class="course-content">
-          <div class="content-header">
-            <div>
+          <div class="d-none d-lg-inline content-header">
+          <div class="course-content">
+            <div class="shadow-courses">
+            <div class="content-header">
               <p>What you'll learn</p>
               <hr />
             </div>
-            <div class="shadow-courses">
-              <div>
-                <h2>Basics Level</h2>
-                <li>
-                  High Level Concepts for RPA Training - Automation Anywhere
-                </li>
-                <li>RPA Overview</li>
-                <li>Automation Anywhere architecture</li>
-                <li>Automation Anywhere control room</li>
-                <li>Web automation - Capture</li>
-                <li>Variables / Arguments</li>
-                <li>Logging mechanism</li>
-                <li>Conditional statements</li>
-                <li>Loop commands</li>
-                <li>Exception Handling</li>
-                <li>Database integration</li>
-              </div>
+            <div>
+              <h2>Basics Level</h2>
+              <li>
+                High Level Concepts for RPA Training - Automation Anywhere
+              </li>
+              <li>RPA Overview</li>
+              <li>Automation Anywhere architecture</li>
+              <li>Automation Anywhere control room</li>
+              <li>Web automation - Capture</li>
+              <li>Variables / Arguments</li>
+              <li>Logging mechanism</li>
+              <li>Conditional statements</li>
+              <li>Loop commands</li>
+              <li>Exception Handling</li>
+              <li>Database integration</li>
             </div>
           </div>
           <div class="intermediate-advanced">
@@ -144,7 +198,8 @@
               <li>Project Organization & Deployment</li>
             </div>
           </div>
-        </div>
+          </div>
+      </div>
       </div>
     </section>
     <section class="instructor-card">
@@ -177,9 +232,16 @@
           in leading teams and implementing RPA solutions. Proficient in
           Automation Anywhere (V11 / A360) and UiPath (22.10), I specialize in
           analyzing client processes, identifying automation opportunities, and
-          re-engineering workflows for efficiency. I've managed Centre of
+          reengineering workflows for efficiency. I've managed Centre of
           Excellence (CoE) teams for four years, fostering innovation and
-          delivering scalable solutions.
+          delivering scalable solutions. From initial process walkthroughs to
+          deployment and ongoing support, I ensure projects meet objectives and
+          drive customer satisfaction. With a strong track record in both
+          Automation Anywhere and UiPath, I excel in diverse challenges,
+          including IQ BOTs, workload management, orchestrator management, and
+          document understanding. My goal is to empower businesses through
+          digital transformation, driving efficiency, scalability, and
+          innovation in an increasingly automated landscape.
         </p>
       </div>
     </section>
@@ -192,6 +254,9 @@
           Trusted By <span>15,000+</span> Students
         </p>
       </div>
+      <div class="d-lg-none">
+        <div class="you"></div>
+      </div>
       <div class="swiper testimonial-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide testimonial-card">
@@ -201,19 +266,22 @@
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
             </div>
-            <div class="testimonial">
-              I am glad that i got this opportunity to learn new things and how
-              to add new features. In this session everyone was super good and
-              helped each and every student. Their dedication and effort towards
-              this session was completely awesome. Even when we ask small/stupid
-              questions they answered it in sweet and convenient way
-            </div>
-            <div class="endorser-details">
-              <div class="endorser-image">
-                <img src="https://theedumoon.com/images/srujan.jpeg" />
+            <div>
+              <div class="testimonial">
+                I am glad that i got this opportunity to learn new things and
+                how to add new features. In this session everyone was super good
+                and helped each and every student. Their dedication and effort
+                towards this session was completely awesome. Even when we ask
+                small/stupid questions they answered it in sweet and convenient
+                way
               </div>
-              <div class="endorser-name">
-                <p>- Cheemakurthi Srujan</p>
+              <div class="endorser-details">
+                <div class="endorser-image">
+                  <img src="https://theedumoon.com/images/srujan.jpeg" />
+                </div>
+                <div class="endorser-name">
+                  <p>- Cheemakurthi Srujan</p>
+                </div>
               </div>
             </div>
           </div>
@@ -240,28 +308,6 @@
               </div>
               <div class="endorser-name">
                 <p>- Snehith</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide testimonial-card">
-            <div class="rating-container">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
-            <div class="testimonial">
-              The platform was so helpful and I could explore the concepts
-              further while working on the assignments. The instructors were
-              very humble and patiently cleared all the doubts. Overall it was a
-              good learning experience. Thanks to Edumoon.
-            </div>
-            <div class="endorser-details">
-              <div class="endorser-image">
-                <img src="https://theedumoon.com/images/sowmya.jpeg" />
-              </div>
-              <div class="endorser-name">
-                <p>- Sowmya Korada</p>
               </div>
             </div>
           </div>
@@ -304,11 +350,14 @@
                 <p>- NANDAN GALI H</p>
               </div>
             </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script src="js/index.js"></script>
           </div>
-
-          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-          <script src="js/index.js"></script>
         </div>
+      </div>
+
+      <div class="d-lg-none mt-5">
+        <div class="my"></div>
       </div>
       <div class="button-container">
         <button>
@@ -317,6 +366,25 @@
             >Join now</a
           >
         </button>
+      </div>
+    </section>
+    <section class="certificate">
+      <div class="certificate-container">
+        <div class="certificate-image">
+          <img
+            src="assets/certificate.jpg"
+            lt="certificte"
+            style="height: 38%; width: 56%; margin-left: 22%"
+          />
+        </div>
+        <div class="certificate-description">
+          <h2>Certification</h2>
+          <p>
+            Get certified in Robot Process Automation. We provide two
+            certificates - one for completing the training course and another
+            for completing the internship.
+          </p>
+        </div>
       </div>
     </section>
     <section class="faq-container">
@@ -405,7 +473,12 @@
         </div>
       </div>
     </section>
-
+    <div class="d-lg-none">
+      <div class="my-in-mobile"></div>
+    </div>
+    <div class="d-none d-lg-inline">
+      <div class="my"></div>
+    </div>
     <section class="location">
       <div>
         <h3>Join us at</h3>
@@ -429,7 +502,14 @@
       </div>
     </section>
     <footer class="footer">
-      <h3 style="text-align: center; margin-top: 20px; margin-bottom: -10px">
+      <h3
+        style="
+          text-align: center;
+          color: black;
+          margin-top: 20px;
+          margin-bottom: -10px;
+        "
+      >
         Follow Us
       </h3>
       <div class="social">
@@ -445,9 +525,11 @@
             ></a>
           </div>
           <div class="p-3">
-            <a href="https://twitter.com/theedumoon?lang=en"
-              ><i class="fa-brands fa-x-twitter"></i
-            ></a>
+            <div>
+              <a href="https://twitter.com/theedumoon?lang=en"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
           </div>
           <div class="p-3">
             <a href="https://www.linkedin.com/company/edumoon/"
@@ -461,18 +543,35 @@
           </div>
         </div>
       </div>
-      <div class="d-flex flex-row justify-content-center p-1">
-        <div class="links-copy-right">
-          <li id="year">EduMoon © 2024</li>
+      <div
+        class="d-flex flex-row align-items-center justify-content-center p-1"
+        style="color: black; margin-bottom: 20px; padding-bottom: 20px"
+      >
+        <div class="links-copy-right" style="color: black">
+          <li id="year" style="color: black">EduMoon © 2024</li>
           <li>
-            <a href="https://www.edumoon.in/privacypolicy"> Privacy Policy</a>
+            <a href="https://www.edumoon.in/privacypolicy" style="color: black">
+              Privacy Policy</a
+            >
           </li>
-          <li><a href="https://www.edumoon.in/termsofuse">Terms of use</a></li>
-          <li><a href="https://www.edumoon.in/contactus"> Contact Us</a></li>
           <li>
-            <a href="https://www.edumoon.in/refundpolicy">Refund Policy</a>
+            <a href="https://www.edumoon.in/termsofuse" style="color: black"
+              >Terms of use</a
+            >
           </li>
+          <li>
+            <a href="https://www.edumoon.in/contactus" style="color: black">
+              Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="https://www.edumoon.in/refundpolicy" style="color: black"
+              >Refund Policy</a
+            >
+          </li>
+          <br />
         </div>
+        <br />
       </div>
     </footer>
   </body>

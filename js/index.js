@@ -1,8 +1,8 @@
 window.onload = function () {
-  document.querySelector('.right-container').classList.add('animate');
-  document.querySelector('.left-container').classList.add('animate');
-  document.querySelector('.about').classList.add('animate');
-}
+  document.querySelector(".right-container").classList.add("animate");
+  document.querySelector(".left-container").classList.add("animate");
+  document.querySelector(".about").classList.add("animate");
+};
 
 var swiper = new Swiper(".testimonial-container", {
   slidesPerView: 3,
@@ -17,5 +17,3 @@ var swiper = new Swiper(".testimonial-container", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-

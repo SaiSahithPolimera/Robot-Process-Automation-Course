@@ -32,16 +32,15 @@ p {
 .image-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .image-container img {
-  height: 420px;
-  width: 620px;
+  height: 40vh;
+  width: auto;
   border-radius: 18px;
-  /* max-width: 100%;
-  height: auto; */
 }
+
 ul {
   list-style: none;
 }
@@ -59,10 +58,10 @@ li {
 }
 
 .home {
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 24px;
   padding: 24px;
 }
 
@@ -72,6 +71,7 @@ li {
 
 .benefits-container {
   display: flex;
+
   padding: 0px;
   gap: 28px;
   justify-content: center;
@@ -79,8 +79,11 @@ li {
 
 .benefit {
   display: flex;
-  height: 100px;
+  height:100px;
+  align-items: center;
+  width: 270px;
   padding: 16px;
+  will-change: 50px;
   flex-direction: column;
   gap: 4px;
   box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.392);
@@ -102,10 +105,13 @@ li {
 .benefit-description {
   font-size: 14px;
 }
-
 .about {
-  height: 100vh;
   padding: 18px 28px;
+  margin-top: 10%;
+}
+.about-in-mobile {
+  padding: 18px 28px;
+  margin-top: 50%;
 }
 
 .about-course-content {
@@ -114,6 +120,7 @@ li {
   padding: 12px;
   gap: 30px;
   font-size: 12px;
+  margin-top: 10%;
 }
 
 .about-image img {
@@ -141,10 +148,28 @@ li {
   gap: 14px;
   box-shadow: 4px 4px 4px 4px rgba(92, 92, 92, 0.392);
 }
+.course-description-card-in-mobile {
+  background-color: #fdf2f0;
+  min-width: 90%;
+
+  animation: bounceLeft 3.5s ease-in-out;
+  padding: 23px;
+  border-radius: 12px;
+
+  align-items: center;
+
+  box-shadow: 4px 4px 4px 4px rgba(92, 92, 92, 0.392);
+}
 
 .about-container {
   font-size: 24px;
   text-align: center;
+  margin-top: 15%;
+}
+.about-container-in-mobile {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 5%;
 }
 
 .course-content {
@@ -154,7 +179,7 @@ li {
   height: 750px;
   border-radius: 12px;
   display: flex;
-  gap: 24px;
+  gap: 32px;
   border: 1px solid beige;
   box-shadow: 9px 9px 4px 5px rgba(200, 129, 255, 0.392);
 }
@@ -174,22 +199,25 @@ li {
 }
 
 .about-instructor {
-  height: 40vh;
+  height: auto;
+  text-align: justify;
+  padding: 16px;
 }
 
 .instructor-card {
-    display: flex;
-    width: 1200px;
-    height: 430px;
-    animation: bounceLeft 3.5s ease-in-out;
-    padding: 24px;
-    box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.392);
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-    margin-top: 5%;
-    border-radius: 12px;
-    flex-direction: column;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40%;
+  flex-direction: column;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 9px 9px 8px 5px rgba(225, 225, 225, 0.392);
 }
 
 .instructor-name {
@@ -204,8 +232,8 @@ li {
 }
 
 .linked-in-icon:hover {
-transform: scale(1.15);
-transition: 3s ease-in-out;
+  transform: scale(1.15);
+  transition: 3s ease-in-out;
 }
 
 .content-header p {
@@ -231,7 +259,7 @@ transition: 3s ease-in-out;
 
 .content-header .shadow-courses {
   padding: 24px;
-  height: 734px;
+  height: 700px;
   border-radius: 12px;
 }
 
@@ -241,14 +269,18 @@ transition: 3s ease-in-out;
   color: #000;
 }
 
-.shadow-courses div {
+.shadow-courses {
   display: flex;
-  gap: 18px;
-  border: 1px solid beige;
-  padding: 12px;
   border-radius: 12px;
   flex-direction: column;
   box-shadow: 9px 9px 4px 5px #a2f885;
+}
+
+.shadow-courses div {
+  display: flex;
+  gap: 18px;
+  padding: 12px;
+  flex-direction: column;
 }
 
 .shadow-courses h2 {
@@ -261,14 +293,14 @@ transition: 3s ease-in-out;
 
 .intermediate-advanced {
   display: flex;
-  gap: 24px;
+  justify-content: space-around;
   flex-direction: column;
 }
 
 .intermediate-advanced div {
-  height: 430px;
+  height: 340px;
   border-radius: 12px;
-  padding: 14px;
+  padding: 36px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -283,23 +315,36 @@ transition: 3s ease-in-out;
 .intermediate-advanced div {
   padding: 16px;
   display: flex;
+  height: auto;
+  width: 100%;
   font-size: 16px;
-  border: 1px solid beige;
   gap: 12px;
 }
 
 .advanced-level {
-  height: 60px;
-  width: 130px;
+  height: 10px;
+  width: 230px;
   box-shadow: 9px 9px 4px 5px rgba(255, 24, 24, 0.392);
 }
-
+.advanced-level-in-mobile {
+  height: 10px;
+  width: 90%;
+  margin-top: 10%;
+  box-shadow: 9px 9px 4px 5px rgba(255, 24, 24, 0.392);
+}
 .intermediate {
+  box-shadow: 9px 9px 4px 5px rgba(24, 174, 255, 0.392);
+}
+.intermediate-in-mobile {
+  min-width: 90%;
+  margin-top: 10%;
   box-shadow: 9px 9px 4px 5px rgba(24, 174, 255, 0.392);
 }
 
 .advanced-level:hover,
 .intermediate:hover,
+.intermediate-in-mobile:hover,
+.advanced-level-in-mobile:hover,
 .shadow-courses:hover {
   cursor: pointer;
   transform: scale(1.02);
@@ -329,9 +374,9 @@ transition: 3s ease-in-out;
   display: flex;
   padding: 24px;
   flex-direction: column;
-  width: 1400px;
+  width: 90%;
   gap: 18px;
-  height: 90vh;
+  height: auto;
   animation: bounceRight 3.5s ease-in-out;
   border-radius: 12px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -385,6 +430,7 @@ transition: 3s ease-in-out;
 
 .footer {
   height: 20vh;
+  color: #f6f2f2;
   width: 100%;
 }
 
@@ -417,8 +463,12 @@ transition: 3s ease-in-out;
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes bounceLeft {
@@ -442,7 +492,8 @@ transition: 3s ease-in-out;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: 100px 50px;
+  height: auto;
+  padding: 150px 50px;
 }
 
 .testimonial-header-container {
@@ -461,6 +512,7 @@ transition: 3s ease-in-out;
 
 .testimonial-subtext {
   font-weight: 450;
+
   color: #494949;
 }
 
@@ -474,15 +526,16 @@ transition: 3s ease-in-out;
   border: none;
   cursor: pointer;
   font-weight: 600;
+  margin-top: 5vh;
   animation: bounceRight 5.5s ease-in-out;
-  background-color: #faeaeabf;
+  background-color: #ed0d0dbf;
   border-radius: 12px;
   padding: 14px;
 }
 
 .button-container button:hover {
-  transition: ease 0.9s;
-  box-shadow: 0px 0px 4px 3px rgba(125, 125, 125, 0.334);
+  transition: ease 0.4s;
+  box-shadow: 0px 0px 4px 6px rgba(9, 234, 13, 0.334);
 }
 
 .swiper {
@@ -556,12 +609,12 @@ transition: 3s ease-in-out;
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #f5f1f1;
 }
 
 a:hover {
   text-decoration: none;
-  color: #000;
+  color: #ead9d9;
 }
 
 .location {
@@ -583,13 +636,151 @@ iframe {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  color: white;
   font-weight: 600;
-  background-color: #faeaeabf;
+  background-color: #ee0a0abf;
   border-radius: 12px;
   padding: 12px;
 }
 
 .location button:hover {
-  background-color: #f8d8d8bf;
+  background-color: #f88e8e;
+}
+.certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: -10px -50px;
+}
+.certificate-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: -10px -50px;
+}
+.my {
+  margin-top: 10vh;
+}
+.you {
+  margin-bottom: 20vh;
+}
+
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+  .home {
+    gap: 4px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .image-container img {
+    height: 30vh;
+  }
+  .benefits-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .benefit {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding: 18px 18px;
+    margin-top: 20%;
+  }
+  .course-description-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .intermediate-advanced div {
+    height: auto;
+    padding: 16px;
+  }
+
+  .testimonials {
+    padding: 50px 20px;
+    gap: 12px;
+  }
+
+  .testimonials button {
+    margin-bottom: 120px;
+  }
+ 
+  .swiper-slide {
+    width: 100%;
+    padding: 20px;
+  }
+  .location {
+    flex-direction: column;
+  }
+
+  .links-copy-right  {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  iframe {
+    width: 60vw;
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    margin-bottom: 10px;
+  }
+
+  .course-content {
+    gap: 12px;
+    padding: 12px;
+  }
+  .image-container img {
+    height: 20vh;
+  }
+  .benefits-container {
+    flex-direction: column;
+  }
+  .benefit {
+    margin-bottom: 10px;
+  }
+  .about {
+    padding: 18px 10px;
+    margin-top: 30%;
+  }
+  .course-description-card {
+    padding: 15px;
+  }
+  .intermediate-advanced div {
+    padding: 12px;
+  }
+  .testimonials {
+    padding: 30px 10px;
+  }
+  .about-course-content {
+    all: unset;
+  }
+  .testimonial-header-container {
+    text-align: center;
+  }
+
+  .swiper-slide {
+    padding: 15px;
+  }
+
+  .location {
+    flex-direction: column;
+  }
 }
 
