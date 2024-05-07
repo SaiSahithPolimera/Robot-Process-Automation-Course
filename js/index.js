@@ -3,23 +3,36 @@ window.onload = function () {
   document.querySelector(".left-container").classList.add("animate");
   document.querySelector(".about").classList.add("animate");
 };
-
-var swiper = new Swiper(".testimonial-container", {
-  slidesPerView: 3,
-  spaceBetween: 30,
+var swiper = new Swiper(".slide-container", {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  sliderPerGroup: 4,
   loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   breakpoints: {
-    768: {
+    0: {
       slidesPerView: 1,
-      spaceBetween: 10
-    }
-  }
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 4,
+    },
+  },
 });

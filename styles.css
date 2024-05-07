@@ -1,8 +1,7 @@
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -79,7 +78,7 @@ li {
 
 .benefit {
   display: flex;
-  height:100px;
+  height: 100px;
   align-items: center;
   width: 270px;
   padding: 16px;
@@ -88,6 +87,10 @@ li {
   gap: 4px;
   box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.392);
   border-radius: 12px;
+}
+
+.benefit p {
+  text-align: center;
 }
 
 .benefit:hover {
@@ -362,7 +365,7 @@ li {
 
 .links-copy-right {
   display: flex;
-  gap: 12px;
+  gap: 18px;
   color: #000;
 }
 
@@ -492,8 +495,7 @@ li {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  height: auto;
-  padding: 150px 50px;
+  padding: 15px 50px;
 }
 
 .testimonial-header-container {
@@ -536,75 +538,6 @@ li {
 .button-container button:hover {
   transition: ease 0.4s;
   box-shadow: 0px 0px 4px 6px rgba(9, 234, 13, 0.334);
-}
-
-.swiper {
-  animation: bounceLeft 5.5s ease-in-out;
-  width: 1200px;
-  height: 560px;
-  display: flex;
-  padding: 30px;
-  gap: 12px;
-  border-radius: 12px;
-  align-items: center;
-  box-shadow: 0px 0px 4px 3px rgba(180, 180, 180, 0.1);
-  justify-content: center;
-}
-
-.swiper-slide {
-  box-shadow: 2px 4px 4px 3px rgba(119, 119, 119, 0.1);
-  display: flex;
-  padding: 30px 50px;
-  width: 200px;
-  border-radius: 12px;
-  height: 350px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonial-card {
-  display: flex;
-  gap: 24px;
-  width: 330px;
-  height: 450px;
-}
-
-.rating-container span {
-  color: gold;
-}
-
-.endorser-details {
-  display: flex;
-  gap: 36px;
-  align-items: center;
-  justify-content: center;
-}
-
-.endorser-name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.endorser-name p {
-  font-size: 18px;
-  color: #000;
-  font-weight: 400;
-}
-
-.endorser-details img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.swiper-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
 }
 
 a {
@@ -669,11 +602,17 @@ iframe {
   margin-bottom: 20vh;
 }
 
-
 @media only screen and (max-width: 768px) {
   body {
     padding: 12px;
   }
+  p.testimonials-header {
+    text-align: center;
+  }
+  .image-box {
+    font-size: 1px;
+  }
+
   .home {
     gap: 4px;
   }
@@ -681,9 +620,9 @@ iframe {
     text-align: center;
     margin-bottom: 20px;
   }
-
   .image-container img {
-    height: 30vh;
+    height: auto;
+    width: 60vh;
   }
   .benefits-container {
     flex-direction: column;
@@ -691,15 +630,15 @@ iframe {
     gap: 8px;
   }
   .benefit {
+    height: 12vh;
+    text-align: center;
     align-items: center;
     margin-bottom: 20px;
   }
-
   .about {
     padding: 18px 18px;
     margin-top: 20%;
   }
-
   .about-image img {
     align-self: center;
     width: 80vw;
@@ -713,29 +652,24 @@ iframe {
     height: auto;
     padding: 16px;
   }
-
   .testimonials {
-    padding: 50px 20px;
+    width: 100%;
+    height: 10%;
+    display: flex;
     gap: 12px;
+    padding: 50px 20px;
   }
-
   .testimonials button {
     margin-bottom: 120px;
-  }
- 
-  .swiper-slide {
-    width: 100%;
-    padding: 20px;
   }
   .location {
     flex-direction: column;
   }
-
-  .links-copy-right  {
+  .links-copy-right {
+    text-align: center;
     padding: 12px;
     font-size: 14px;
   }
-
   iframe {
     width: 60vw;
     height: 50vh;
@@ -747,31 +681,50 @@ iframe {
     margin-bottom: 10px;
   }
 
+  p.testimonials-header {
+    text-align: center;
+  }
+
   .course-content {
     gap: 12px;
     padding: 12px;
   }
+
   .image-container img {
-    height: 20vh;
+    height: 30vh;
+    width: auto;
   }
+
   .benefits-container {
     flex-direction: column;
   }
+
   .benefit {
     margin-bottom: 10px;
   }
+
   .about {
     padding: 18px 10px;
     margin-top: 30%;
   }
+
   .course-description-card {
     padding: 15px;
   }
+
   .intermediate-advanced div {
     padding: 12px;
   }
+
   .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 30px 10px;
+  }
+
+  .button-container button {
+    margin: 0 auto;
   }
   .about-course-content {
     all: unset;
@@ -780,12 +733,96 @@ iframe {
     text-align: center;
   }
 
-  .swiper-slide {
-    padding: 15px;
-  }
-
   .location {
     flex-direction: column;
   }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+}
+.card .image-box {
+  height: 200px;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+.card .profile-details img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile-details .rating {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+.swiper-navBtn {
+  color: #000;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+.image-box p {
+  font-size: 15px;
+}
+
+.image-box {
+  padding: 12px;
+}
+
+h4 span {
+  color: gold;
+}
+
+.name-job {
+  padding: 12px;
+}
+
+.job {
+  font-size: 12px;
 }
 
