@@ -622,7 +622,7 @@ iframe {
   }
   .image-container img {
     height: auto;
-    width: 60vh;
+    width: 40vh;
   }
   .benefits-container {
     flex-direction: column;
