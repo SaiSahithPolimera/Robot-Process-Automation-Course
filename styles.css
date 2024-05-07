@@ -699,6 +699,11 @@ iframe {
     padding: 18px 18px;
     margin-top: 20%;
   }
+
+  .about-image img {
+    align-self: center;
+    width: 80vw;
+  }
   .course-description-card {
     width: 100%;
     height: auto;
