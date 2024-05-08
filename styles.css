@@ -3,6 +3,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center;
+  align-items: center;
 }
 
 .header {
@@ -32,12 +34,14 @@ p {
 .image-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 10%;
 }
 
 .image-container img {
-  height: 40vh;
+  height: 50vh;
   width: auto;
+  text-align: center;
+  margin-left: 30%;
   border-radius: 18px;
 }
 
@@ -78,7 +82,7 @@ li {
 
 .benefit {
   display: flex;
-  height: 100px;
+  height: auto;
   padding: 16px;
   flex-direction: column;
   gap: 4px;
@@ -109,7 +113,9 @@ li {
 .about-in-mobile{
 
   padding: 18px 28px;
-  margin-top: 50%;
+  margin-top: 73vh;
+  height: auto;
+  width: auto;
 }
 
 .about-course-content {
@@ -122,7 +128,7 @@ li {
 }
 
 .about-image img {
-  width: 400px;
+  width: auto;
   height: auto;
   border-radius: 12px;
 }
@@ -135,8 +141,8 @@ li {
 
 .course-description-card {
   background-color: #fdf2f0;
-  width: 430px;
-  height: 750px;
+  width: auto;
+  height: auto;
   animation: bounceLeft 3.5s ease-in-out;
   padding: 23px;
   border-radius: 12px;
@@ -183,7 +189,7 @@ li {
 }
 
 .instructor-image {
-  width: 150px;
+  width: 25vh;
   height: 150px;
   border-radius: 100%;
 }
@@ -309,8 +315,9 @@ transition: 3s ease-in-out;
   padding: 16px;
   display: flex;
   width: 100%;
+  height: auto;
   font-size: 16px;
-  border: 1px solid beige;
+  
   gap: 12px;
 }
 
@@ -344,45 +351,49 @@ transition: 3s ease-in-out;
 }
 
 .total{
-  width: 100%;
+  width: auto;
   height: auto;
   border-radius: 12px;
   text-align: center;
   padding: 20px;
-  border: 1px solid beige;
+  
   box-shadow: 0px 0px 9px 5px rgba(188, 208, 12, 0.392)
 }
 
 .learn-apply-succeed{
-  width: 70%;
+  width: auto;
   text-align: center;
-  margin-left: 16%;
+  
   margin-top: 5%;
   padding: 10px;
+  
   box-shadow: 1px 1px 9px 2px rgba(171, 219, 177, 0.392);
 }
 .learn-on-demand{
-  width: 50%; 
+  width: auto; 
   text-align: left;
   margin-left: 10%;
   margin-top: 5%;
   padding: 3%;
+  margin-right: 30%;
   box-shadow: -5px 5px 10px 2px rgba(255, 24, 24, 0.392);
 }
 .learn-from-experts{
-  width: 50%; 
+  width: auto; 
   text-align: right; 
   margin-left: 40%;
   margin-top: 5%;
   padding: 3%;
+  margin-right: 2%;
   box-shadow: 9px 9px 10px 2px rgba(255, 24, 24, 0.392);
 }
 .subscribe-to-scale{
-  width: 50%; 
+  width: auto; 
   text-align: left; 
   margin-left: 10%;
   margin-top: 5%;
   padding: 3%;
+  margin-right: 30%;
   box-shadow: -5px 9px 10px 2px rgba(255, 24, 24, 0.392);
 
 }
