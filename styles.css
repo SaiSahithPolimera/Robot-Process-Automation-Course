@@ -700,7 +700,17 @@ iframe {
   }
 
   .benefit {
+    width: 22vh;
+    height: auto;
     margin-bottom: 10px;
+  }
+
+  .benefit h3 {
+    font-size: 14px;
+  }
+
+  .benefit p {
+    font-size: 10px;
   }
 
   .about {
@@ -726,9 +736,11 @@ iframe {
   .button-container button {
     margin: 0 auto;
   }
+
   .about-course-content {
     all: unset;
   }
+
   .testimonial-header-container {
     text-align: center;
   }
@@ -827,6 +839,9 @@ h4 span {
 }
 
 @media screen and (max-width: 320px) and (max-height: 1080px) {
+ * {
+  background-color: #333;
+  };
   .image-container img {
     height: 12vh;
     width: auto;
