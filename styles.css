@@ -909,9 +909,6 @@ h4 span {
 }
 
 @media (min-width: 475px) {
-  body {
-    background-color: #555;
-  }
   .home {
     height: 95vh;
     padding: 12px;
