@@ -781,9 +781,10 @@ h4 span {
   }
   .course-description-card {
     width: 95%;
-    margin-left: 3%;
     height: 60%;
     padding: 18px 16px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: justify;
   }
   .course-content {
@@ -914,6 +915,14 @@ h4 span {
     padding: 12px;
     gap: 0px;
   }
+  .course-description-card {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    padding: 18px 16px;
+    text-align: justify;
+  }
   .image-container img {
     width: 80%;
     height: 50%;
@@ -1038,7 +1047,7 @@ h4 span {
 
 @media (min-width: 640px) {
   .home {
-    height: 75vh;
+    height: 85vh;
     padding: 12px;
   }
   .image-container img {
@@ -1059,8 +1068,12 @@ h4 span {
     font-size: 14px;
   }
   .course-description-card {
-    width: 100%;
-    padding: 24px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    padding: 18px 16px;
+    text-align: justify;
   }
   .about-description p {
     font-size: 16px;
@@ -1187,7 +1200,7 @@ h4 span {
 
 @media (min-width: 768px) {
   .home {
-    height: 70vh;
+    height: 75vh;
     gap: 28px;
   }
   .image-container img {
@@ -1326,16 +1339,19 @@ h4 span {
     align-items: center;
   }
   .course-description-card {
+    margin-left: auto;
+    margin-right: auto;
     width: 30%;
-    margin-bottom: 2%;
   }
   .course-content {
-    width: 1000px;
+    width: 850px;
     display: flex;
-    gap: 24px;
+    gap: 14px;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     box-shadow: 8px 8px 8px 0px rgba(200, 129, 255, 0.392);
   }
