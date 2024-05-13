@@ -168,6 +168,7 @@ li {
   padding: 24px;
   animation: bounceRight 3.5s ease-in-out;
   width: 940px;
+  align-items: center;
   height: 690px;
   border-radius: 25px;
   display: flex;
@@ -211,7 +212,7 @@ li {
   flex-direction: column;
   padding: 60px;
   border-radius: 25px;
-  box-shadow: 9px 9px 8px 5px rgba(8, 8, 8, 0.392);
+  box-shadow: 11px 11px 18px 4px rgb(152, 152, 152);
 }
 
 .instructor-name {
@@ -289,6 +290,7 @@ li {
 
 .intermediate-advanced {
   display: flex;
+  border-radius: 25px;
   justify-content: space-around;
   flex-direction: column;
 }
@@ -738,14 +740,96 @@ h4 span {
 
 @media (min-width: 360px) {
   body {
-    padding: 0 12px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  .home {
+    height: 95vh;
+    padding: 12px;
+  }
+  .image-container img {
+    width: 80%;
+    height: 40%;
+  }
+  .header h1 {
+    font-size: 32px;
+  }
+  .header-subtext {
+    font-size: 14px;
+  }
+  .benefit {
+    height: 100px;
+  }
+  .about-course-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-description p {
+    font-size: 14px;
+  }
+  .course-description-card {
+    padding: 16px 12px;
+    text-align: justify;
+  }
+  .course-content {
+    display: flex;
+    border: none;
+    box-shadow: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    height: 100%;
+  }
+  .course-content li {
+    font-size: 14px;
+  }
+  .advanced-level:hover,
+  .intermediate:hover,
+  .shadow-courses:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #fff;
+    transition: ease-out 0.3s;
+  }
+
+  .shadow-courses {
+    width: 100%;
+  }
+
+  .intermediate-advanced {
+    width: 100%;
+  }
+  .intermediate-advanced {
+    gap: 18px;
+  }
+  .instructor-card {
+    height: 10%;
+    animation: bounceLeft 3.5s ease-in-out;
+    padding: 16px;
+    width: 95%;
+  }
+  .instructor-name h2 {
+    font-size: 16px;
+  }
+  .instructor-image-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .about-container {
+    padding: 12px;
+  }
+  .about-container h1 {
+    font-size: 24px;
+  }
+  .about-instructor p {
+    font-size: 14px;
   }
   .testimonials {
     height: 100vh;
     gap: 60px;
   }
   .container {
-    max-width: 320px;
+    max-width: 330px;
   }
   .testimonial-header-container p {
     text-align: center;
@@ -766,14 +850,14 @@ h4 span {
     flex-direction: column;
   }
   section.location {
-    width: 80%;
+    width: 100%;
     display: flex;
     padding: 12px;
     align-items: center;
     justify-content: center;
   }
 
-  .faq-header{
+  .faq-header {
     font-size: 24px;
   }
 
@@ -786,8 +870,7 @@ h4 span {
   }
 
   .location iframe {
-    width: 120%;
-    margin-left: -10%;
+    width: 100%;
   }
   .location h3 {
     font-size: 28px;
@@ -798,21 +881,99 @@ h4 span {
   .footer {
     height: 10vh;
     gap: 12px;
+    padding: 12px 12px;
   }
   .social {
     display: flex;
     gap: 24px;
   }
   .footer li {
+    padding: 4px;
     text-align: center;
   }
 }
 
 @media (min-width: 475px) {
-  .container {
-    max-width: 500px;
+  .home {
+    height: 95vh;
+    padding: 12px;
+    gap: 0px;
+  }
+  .image-container img {
+    width: 80%;
+    height: 50%;
+  }
+  .header h1 {
+    font-size: 32px;
+  }
+  .header-subtext {
+    font-size: 24px;
+  }
+  .benefit {
+    height: 85px;
+    padding: 12px;
+  }
+  .benefit-description {
+    font-size: 12px;
+  }
+  .about-image img {
+    width: 260px;
+  }
+  .course-description-card {
+    width: 100%;
+  }
+  .about-description p {
+    font-size: 16px;
+  }
+  .course-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    border: none;
+    box-shadow: none;
+    height: 100%;
+  }
+  .course-content li {
+    font-size: 24x;
+  }
+  .advanced-level:hover,
+  .intermediate:hover,
+  .shadow-courses:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #fff;
+    transition: ease-out 0.3s;
   }
 
+  .intermediate-advanced {
+    gap: 24px;
+  }
+  .instructor-card {
+    height: 92vh;
+    justify-content: space-evenly;
+    animation: bounceLeft 3.5s ease-in-out;
+    padding: 16px;
+  }
+  .instructor-name h2 {
+    font-size: 18px;
+  }
+  .instructor-image-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .about-container {
+    padding: 2px;
+  }
+  .about-container h1 {
+    font-size: 32px;
+  }
+  .about-instructor p {
+    font-size: 15px;
+  }
+  .container {
+    max-width: 300px;
+  }
   .image-box p {
     font-size: 14px;
   }
@@ -839,8 +1000,7 @@ h4 span {
     flex-direction: column;
   }
   .location iframe {
-    width: 130%;
-    margin-left: -10%;
+    width: 500px;
   }
   .location h3 {
     font-size: 28px;
@@ -848,21 +1008,111 @@ h4 span {
   }
   .footer {
     height: 10vh;
-    gap: 18px;
+    gap: 12px;
+    padding: 0px;
   }
   .social {
     display: flex;
     gap: 32px;
   }
   .footer li {
+    padding: 12px;
     text-align: center;
   }
 }
 
 @media (min-width: 640px) {
+  .home {
+    height: 75vh;
+    padding: 12px;
+  }
+  .image-container img {
+    width: 60%;
+    height: 40%;
+  }
+  .header h1 {
+    font-size: 36px;
+  }
+  .header-subtext {
+    font-size: 18px;
+  }
+  .benefit {
+    height: 100px;
+    padding: 6px;
+  }
+  .benefit-description {
+    font-size: 14px;
+  }
+  .course-description-card {
+    width: 100%;
+    padding: 24px;
+  }
+  .about-description p {
+    font-size: 16px;
+  }
+  .about-image img {
+    width: 500px;
+  }
+  .course-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 28px;
+    border: none;
+    box-shadow: none;
+    height: 100%;
+  }
+  .course-content li {
+    font-size: 26x;
+  }
+  .advanced-level:hover,
+  .intermediate:hover,
+  .shadow-courses:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #fff;
+    transition: ease-out 0.3s;
+  }
+  .shadow-courses,
+  .intermediate-advanced {
+    width: 100%;
+  }
+  .intermediate-advanced {
+    gap: 28px;
+  }
+
+  .instructor-card {
+    height: 100%;
+    justify-content: space-evenly;
+    animation: bounceLeft 3.5s ease-in-out;
+    padding: 16px;
+    width: 90%;
+  }
+  .instructor-name h2 {
+    font-size: 16px;
+  }
+  .instructor-image-container img {
+    width: 130px;
+    height: 130px;
+  }
+  .about-container {
+    padding: 12px;
+  }
+  .about-container h1 {
+    font-size: 36px;
+  }
+  .about-instructor p {
+    font-size: 16px;
+  }
+  .container {
+    max-width: 638px;
+  }
+  .image-box p {
+    font-size: 16px;
+  }
   .testimonials {
     height: 100vh;
-      gap: 66px;
+    gap: 66px;
   }
   .testimonial-header-container p {
     font-size: 36px;
@@ -882,7 +1132,7 @@ h4 span {
     flex-direction: column;
   }
   section.location {
-    width: 80%;
+    width: 100%;
     display: flex;
     padding: 12px;
     gap: 36px;
@@ -890,23 +1140,20 @@ h4 span {
     justify-content: center;
   }
   .location iframe {
-    width: 160%;
-    margin-left: -30%;
+    width: 550px;
   }
   .location h3 {
-    font-size: 28px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 24px;
     font-weight: 500;
   }
   .footer {
     height: 15vh;
     padding: 12px 15px;
-    gap: 12px;
+    gap: 0px;
   }
   .social {
     display: flex;
-    gap: 24px;
+    gap: 32px;
   }
   .footer li {
     text-align: center;
@@ -914,8 +1161,8 @@ h4 span {
 
   .links-copy-right {
     display: flex;
-    gap: 18px;
-    padding: 18px;
+    gap: 1px;
+    padding: 4px;
   }
 
   .footer li {
@@ -924,12 +1171,95 @@ h4 span {
 }
 
 @media (min-width: 768px) {
+  .home {
+    height: 80vh;
+    gap: 18px;
+  }
+  .image-container img {
+    width: 50%;
+    height: 30%;
+  }
+  .header h1 {
+    font-size: 42px;
+  }
+  .header-subtext {
+    font-size: 24px;
+  }
+  .benefit {
+    height: 100px;
+    padding: 12px;
+  }
+  .benefit-description {
+    font-size: 14px;
+  }
+  .course-description-card {
+    height: 40%;
+    padding: 24px;
+  }
+  .about-description p {
+    font-size: 14px;
+  }
+  .about-image img {
+    width: 330px;
+  }
+  .course-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+    flex-direction: row;
+    border: none;
+    box-shadow: 8px 8px 8px 0px rgba(200, 129, 255, 0.392);
+  }
+  .course-content li {
+    font-size: 14px;
+  }
+  .advanced-level:hover,
+  .intermediate:hover,
+  .shadow-courses:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #fff;
+    transition: ease-out 0.3s;
+  }
+  .shadow-courses {
+    width: 160%;
+  }
+
+  .intermediate-advanced {
+    width: 150%;
+  }
+  .intermediate-advanced {
+    gap: 24px;
+  }
+  .instructor-card {
+    height: 90vh;
+    animation: bounceLeft 3.5s ease-in-out;
+    padding: 16px;
+    width: 95%;
+  }
+  .instructor-name h2 {
+    font-size: 18px;
+  }
+  .instructor-image-container img {
+    width: 170px;
+    height: 170px;
+  }
+  .about-container {
+    padding: 12px;
+  }
+  .about-container h1 {
+    font-size: 36px;
+  }
+  .about-instructor p {
+    font-size: 16px;
+  }
   .testimonials {
     height: 100vh;
     gap: 56px;
   }
   .container {
-    max-width: 600px;
+    max-width: 650px;
   }
   .faqs {
     display: flex;
@@ -955,8 +1285,91 @@ h4 span {
   }
 }
 
-
 @media (min-width: 1280px) {
+  .home {
+    height: 65vh;
+  }
+  .image-container img {
+    width: 40%;
+    height: 60%;
+  }
+  .header h1 {
+    font-size: 36px;
+  }
+  .header-subtext {
+    font-size: 18px;
+  }
+  .benefit {
+    height: 100px;
+    padding: 12px;
+  }
+  .benefit-description {
+    font-size: 14px;
+  }
+  .about-course-content {
+    flex-direction: row;
+    align-items: center;
+  }
+  .course-description-card {
+    width: 30%;
+    margin-bottom: 2%;
+  }
+  .course-content {
+    width: 1000px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: none;
+    box-shadow: 8px 8px 8px 0px rgba(200, 129, 255, 0.392);
+  }
+  .course-content li {
+    font-size: 14px;
+  }
+  .advanced-level:hover,
+  .intermediate:hover,
+  .shadow-courses:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    background-color: #fff;
+    transition: ease-out 0.3s;
+  }
+  .faqs {
+    flex-direction: row;
+  }
+  .faq-header {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intermediate-advanced {
+    gap: 24px;
+  }
+  .instructor-card {
+    height: 80vh;
+    justify-content: space-evenly;
+    animation: bounceLeft 3.5s ease-in-out;
+    padding: 12px 12px;
+    width: 95%;
+  }
+  .instructor-name h2 {
+    font-size: 24px;
+  }
+  .instructor-image-container img {
+    width: 180px;
+    height: 180px;
+  }
+  .about-container {
+    padding: 8px;
+  }
+  .about-container h1 {
+    font-size: 42px;
+  }
+  .about-instructor p {
+    font-size: 17px;
+  }
   .container {
     max-width: 1200px;
   }
@@ -979,12 +1392,14 @@ h4 span {
     font-size: 16px;
   }
   .location iframe {
-    width: 300%;
-    margin-left: -95%;
+    width: 800px;
+  }
+  .location h3 {
+    font-size: 32px;
   }
   .location {
     height: 80vh;
-    gap: 12px;
+    gap: 4px;
     padding: 0 24px;
   }
   .social {
@@ -992,9 +1407,9 @@ h4 span {
   }
   .footer {
     padding: 0;
-    gap: 3px;
+    gap: 1px;
   }
   .links-copy-right {
-    padding: 12px;
+    padding: 1px;
   }
 }
