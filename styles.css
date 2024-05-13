@@ -740,16 +740,17 @@ h4 span {
 
 @media (min-width: 360px) {
   body {
-    overflow-x: hidden;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   .home {
     height: 95vh;
+    gap: 0px;
     padding: 12px;
   }
   .image-container img {
-    width: 80%;
-    height: 40%;
+    width: 70%;
+    height: 30%;
   }
   .header h1 {
     font-size: 32px;
@@ -758,17 +759,31 @@ h4 span {
     font-size: 14px;
   }
   .benefit {
-    height: 100px;
+    padding: 14px;
+  }
+  .benefit-description {
+    font-size: 12px;
+  }
+
+  .benefit-title {
+    font-size: 16px;
+  }
+  .about-image img {
+    width: 260px;
   }
   .about-course-content {
     flex-direction: column;
+    padding: 0;
     justify-content: center;
   }
   .about-description p {
     font-size: 14px;
   }
   .course-description-card {
-    padding: 16px 12px;
+    width: 95%;
+    margin-left: 3%;
+    height: 60%;
+    padding: 18px 16px;
     text-align: justify;
   }
   .course-content {
@@ -806,7 +821,7 @@ h4 span {
     height: 10%;
     animation: bounceLeft 3.5s ease-in-out;
     padding: 16px;
-    width: 95%;
+    width: 90%;
   }
   .instructor-name h2 {
     font-size: 16px;
@@ -894,6 +909,9 @@ h4 span {
 }
 
 @media (min-width: 475px) {
+  body {
+    background-color: #555;
+  }
   .home {
     height: 95vh;
     padding: 12px;
@@ -922,7 +940,7 @@ h4 span {
   .course-description-card {
     width: 100%;
   }
-  .about-description p {
+  .about- description p {
     font-size: 16px;
   }
   .course-content {
@@ -1172,8 +1190,8 @@ h4 span {
 
 @media (min-width: 768px) {
   .home {
-    height: 80vh;
-    gap: 18px;
+    height: 70vh;
+    gap: 28px;
   }
   .image-container img {
     width: 50%;
