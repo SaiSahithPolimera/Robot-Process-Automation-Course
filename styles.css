@@ -147,8 +147,6 @@ li {
 
 .course-description-card {
   background-color: #fdf2f0;
-  width: 410px;
-  height: 690px;
   animation: bounceLeft 3.5s ease-in-out;
   padding: 20px 12px;
   border-radius: 25px;
@@ -744,7 +742,7 @@ h4 span {
     overflow-x: hidden;
   }
   .home {
-    height: 95vh;
+    height: auto;
     gap: 0px;
     padding: 12px;
   }
@@ -754,6 +752,11 @@ h4 span {
   }
   .header h1 {
     font-size: 32px;
+  }
+  .about {
+    padding: 20px 20px;
+    height: auto;
+    margin-top: 0;
   }
   .header-subtext {
     font-size: 14px;
@@ -780,8 +783,6 @@ h4 span {
     font-size: 14px;
   }
   .course-description-card {
-    width: 95%;
-    height: 60%;
     padding: 18px 16px;
     margin-left: auto;
     margin-right: auto;
@@ -819,7 +820,7 @@ h4 span {
     gap: 18px;
   }
   .instructor-card {
-    height: 10%;
+    height: auto;
     animation: bounceLeft 3.5s ease-in-out;
     padding: 16px;
     width: 90%;
@@ -904,19 +905,18 @@ h4 span {
     gap: 24px;
   }
   .footer li {
-    padding: 4px;
+    padding: 0px;
     text-align: center;
   }
 }
 
 @media (min-width: 475px) {
   .home {
-    height: 95vh;
+    height: auto;
     padding: 12px;
     gap: 0px;
   }
   .course-description-card {
-    width: 95%;
     margin-left: auto;
     margin-right: auto;
     height: 60%;
@@ -974,7 +974,7 @@ h4 span {
     gap: 24px;
   }
   .instructor-card {
-    height: 92vh;
+    height: auto;
     justify-content: space-evenly;
     animation: bounceLeft 3.5s ease-in-out;
     padding: 16px;
@@ -1024,7 +1024,7 @@ h4 span {
     flex-direction: column;
   }
   .location iframe {
-    width: 500px;
+    width: 400px;
   }
   .location h3 {
     font-size: 28px;
@@ -1047,7 +1047,7 @@ h4 span {
 
 @media (min-width: 640px) {
   .home {
-    height: 85vh;
+    height: auto;
     padding: 12px;
   }
   .image-container img {
@@ -1068,7 +1068,6 @@ h4 span {
     font-size: 14px;
   }
   .course-description-card {
-    width: 95%;
     margin-left: auto;
     margin-right: auto;
     height: 60%;
@@ -1200,12 +1199,16 @@ h4 span {
 
 @media (min-width: 768px) {
   .home {
-    height: 75vh;
-    gap: 28px;
+    height: auto;
   }
   .image-container img {
     width: 50%;
     height: 30%;
+  }
+  .about {
+    padding: 20px 20px;
+    height: auto;
+    margin-top: 0;
   }
   .header h1 {
     font-size: 42px;
@@ -1221,7 +1224,7 @@ h4 span {
     font-size: 14px;
   }
   .course-description-card {
-    height: 40%;
+    height: auto;
     padding: 24px;
   }
   .about-description p {
@@ -1261,7 +1264,7 @@ h4 span {
     gap: 24px;
   }
   .instructor-card {
-    height: 90vh;
+    height: auto;
     animation: bounceLeft 3.5s ease-in-out;
     padding: 16px;
     width: 95%;
@@ -1283,7 +1286,7 @@ h4 span {
     font-size: 16px;
   }
   .testimonials {
-    height: 100vh;
+    height: auto;
     gap: 56px;
   }
   .container {
@@ -1315,7 +1318,7 @@ h4 span {
 
 @media (min-width: 1280px) {
   .home {
-    height: 65vh;
+    height: auto;
   }
   .image-container img {
     width: 40%;
@@ -1328,7 +1331,6 @@ h4 span {
     font-size: 18px;
   }
   .benefit {
-    height: 100px;
     padding: 12px;
   }
   .benefit-description {
@@ -1336,22 +1338,20 @@ h4 span {
   }
   .about-course-content {
     flex-direction: row;
+    gap: 12px;
+    height: auto;
+    width: 95%;
+    justify-content: center;
     align-items: center;
   }
   .course-description-card {
-    margin-left: auto;
-    margin-right: auto;
     width: 30%;
   }
   .course-content {
-    width: 850px;
-    display: flex;
-    gap: 14px;
+    width: auto;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
     border: none;
     box-shadow: 8px 8px 8px 0px rgba(200, 129, 255, 0.392);
   }
@@ -1379,11 +1379,11 @@ h4 span {
     gap: 24px;
   }
   .instructor-card {
-    height: 80vh;
+    height: auto;
     justify-content: space-evenly;
     animation: bounceLeft 3.5s ease-in-out;
     padding: 12px 12px;
-    width: 95%;
+    width: auto;
   }
   .instructor-name h2 {
     font-size: 24px;
