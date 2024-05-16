@@ -31,6 +31,10 @@ var swiper = new Swiper(".slide-container", {
       slidesPerView: 1,
       slidesPerGroup: 1
     },
+    475: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
+    },
     520: {
       slidesPerView: 2,
       slidesPerGroup: 2

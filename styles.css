@@ -45,9 +45,9 @@ p {
 }
 
 .image-container img {
-  height: 40vh;
+  height: 3px;
   width: auto;
-  border-radius: 18px;
+  border-radius: 25px;
 }
 
 ul {
@@ -67,10 +67,12 @@ li {
 }
 
 .home {
-  height: 55vh;
+  height: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   padding: 60px;
 }
 
@@ -80,7 +82,6 @@ li {
 
 .benefits-container {
   display: flex;
-
   padding: 0px;
   gap: 28px;
   justify-content: center;
@@ -88,7 +89,7 @@ li {
 
 .benefit {
   display: flex;
-  height: 100px;
+  height: auto;
   align-items: center;
   width: 270px;
   padding: 16px;
@@ -462,6 +463,10 @@ li {
 }
 
 .right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   animation: bounceRight 3.5s ease-in-out;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
@@ -543,7 +548,7 @@ li {
 }
 
 .button-container button {
-  font-size: 24px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   font-weight: 600;
@@ -551,12 +556,17 @@ li {
   background-color: #ed0d0dbf;
   border-radius: 12px;
   padding: 14px;
+  margin-bottom: 28px;
 }
 
 .button-container button:hover {
   transition: ease 0.4s;
-  box-shadow: 0px 0px 4px 6px rgba(9, 234, 13, 0.334);
-}
+  color: white;
+  box-shadow: 1px 2px 8px 12px rgba(242, 93, 93, 0.712);}
+
+  button a:hover {
+    color: white;
+  }
 
 a {
   text-decoration: none;
@@ -842,7 +852,7 @@ h4 span {
     font-size: 14px;
   }
   .testimonials {
-    height: 100vh;
+    height: auto;
     gap: 60px;
   }
   .container {
@@ -996,13 +1006,13 @@ h4 span {
     font-size: 15px;
   }
   .container {
-    max-width: 300px;
+    max-width: 500px;
   }
   .image-box p {
     font-size: 14px;
   }
   .testimonials {
-    height: 100vh;
+    height: auto;
     gap: 60px;
   }
   .testimonial-header-container p {
@@ -1138,7 +1148,7 @@ h4 span {
     font-size: 16px;
   }
   .testimonials {
-    height: 100vh;
+    height: auto;
     gap: 66px;
   }
   .testimonial-header-container p {
@@ -1321,8 +1331,8 @@ h4 span {
     height: auto;
   }
   .image-container img {
-    width: 40%;
-    height: 60%;
+    width: 38%;
+    height: 65%;
   }
   .header h1 {
     font-size: 36px;
@@ -1410,7 +1420,7 @@ h4 span {
     flex-direction: row;
   }
   .faqs {
-    height: 95vh;
+    height: auto;
   }
   .faq-item {
     text-align: justify;
@@ -1422,6 +1432,7 @@ h4 span {
   .faq-item p {
     font-size: 16px;
   }
+
   .location iframe {
     width: 800px;
   }
@@ -1429,7 +1440,7 @@ h4 span {
     font-size: 32px;
   }
   .location {
-    height: 80vh;
+    height: auto;
     gap: 4px;
     padding: 0 24px;
   }
