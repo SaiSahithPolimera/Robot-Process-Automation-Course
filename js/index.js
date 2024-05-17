@@ -3,6 +3,7 @@ window.onload = function () {
   document.querySelector(".left-container").classList.add("animate");
   document.querySelector(".about").classList.add("animate");
 };
+
 var swiper = new Swiper(".slide-container", {
   slidesPerView: 4,
   spaceBetween: 20,
@@ -24,15 +25,27 @@ var swiper = new Swiper(".slide-container", {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      slidesPerGroup: 1
+    },
+    360: {
+      slidesPerView: 1,
+      slidesPerGroup: 1
+    },
+    475: {
+      slidesPerView: 2,
+      slidesPerGroup: 2
     },
     520: {
       slidesPerView: 2,
+      slidesPerGroup: 2
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
+      slidesPerGroup: 2
     },
     1000: {
       slidesPerView: 4,
     },
   },
 });
+
