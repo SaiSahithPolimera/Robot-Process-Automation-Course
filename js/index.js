@@ -49,4 +49,3 @@ var swiper = new Swiper(".slide-container", {
   },
 });
 
-screen.orientation.lock();
