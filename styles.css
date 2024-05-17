@@ -50,6 +50,11 @@ p {
   border-radius: 25px;
 }
 
+.edumoon-logo img{
+  align-self: flex-end;
+  width: 10%;
+}
+
 ul {
   list-style: none;
 }
